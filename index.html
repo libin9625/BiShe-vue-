@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>y</title>
+    <!-- <script src="static/js/menu.js"></script>
+    <script src="static/js/slide.js"></script> -->
+    <link rel="stylesheet" href="static/css/all.css">
+    <script src="static/js/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="static/js/slide.js"></script>
+    <!-- <script src="static/js/bdtxk.js"></script>
+    <script src="static/js/gotopage.js"></script>
+    <script src="static/js/statpagedown.js"></script> -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    //大图滚动
+    jQuery("#ifocus").slide({ titCell:"#ifocus_btn li", mainCell:"#ifocus_piclist ul",effect:"left", delayTime:200, autoPlay:true,triggerTime:0});
+    //文字切换
+    jQuery("#ifocus").slide({ titCell:"#ifocus_btn li", mainCell:"#ifocus_tx ul",delayTime:0, autoPlay:true});
+    jQuery(".tabsList").slide({ titCell:".tit",triggerTime:100});
+    jQuery(".p3-Slide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",autoPage:true, trigger:"click" });
+    jQuery(".slideTxtBox").slide();
+    jQuery(".scrollBox").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:3,trigger:"click"});
+  </script>
+</html>

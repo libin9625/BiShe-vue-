@@ -1,0 +1,26 @@
+/* CSS Document */
+/* imgscale */
+@keyframes imgscale{from {transform:scale(0.5);}to {transform:scale(1);}}
+@-moz-keyframes imgscale /* Firefox */{from {transform:scale(0.5);}to {transform:scale(1);}}
+@-webkit-keyframes imgscale /* Safari 和 Chrome */{from {transform:scale(0.5);}to {transform:scale(1);}}
+@-o-keyframes imgscale /* Opera */{from {transform:scale(0.5);}to {transform:scale(1);}}
+/* txtend */
+@keyframes txtend{from {transform:translate(0px,50px);}to {transform:none;}}
+@-moz-keyframes txtend/* Firefox */{from {transform:translate(0px,50px);}to {transform:none;}}
+@-webkit-keyframes txtend /* Safari 和 Chrome */{from {transform:translate(0px,50px);}to {transform:none;}}
+@-o-keyframes txtend /* Opera */{from {transform:translate(0px,50px);}to {transform:none;}}
+/* txtright */
+@keyframes txtright{from {transform:translate(20px,0px);}to {transform:none;}}
+@-moz-keyframes txtright/* Firefox */{from {transform:translate(20px,0px);}to {transform:none;}}
+@-webkit-keyframes txtright /* Safari 和 Chrome */{from {transform:translate(20px,0px);}to {transform:none;}}
+@-o-keyframes txtright /* Opera */{from {transform:translate(20px,0px);}to {transform:none;}}
+/*roat3d*/
+@keyframes roat3d{from {transform:rotateY(90deg);}to {transform:rotateY(0deg);}}
+@-moz-keyframes roat3d/* Firefox */{from {transform:rotateY(90deg);}to {transform:rotateY(0deg);}}
+@-webkit-keyframes roat3d /* Safari 和 Chrome */{from {transform:rotateY(90deg);}to {transform:rotateY(0deg);}}
+@-o-keyframes roat3d /* Opera */{from {transform:rotateY(90deg);}to {transform:rotateY(0deg);}}
+/* txtleft */
+@keyframes txtleft{from {transform:translate(-20px,0px);}to {transform:none;}}
+@-moz-keyframes txtleft/* Firefox */{from {transform:translate(-20px,0px);}to {transform:none;}}
+@-webkit-keyframes txtleft /* Safari 和 Chrome */{from {transform:translate(-20px,0px);}to {transform:none;}}
+@-o-keyframes txtleft /* Opera */{from {transform:translate(-20px,0px);}to {transform:none;}}
