@@ -3,14 +3,13 @@
         <!-- top start -->
         <div class="top-bg w100">
             <div class="top w1000">
-                <div class="logo fl"><!--#begineditable viewid="199805" name="LOGO"-->
-                <!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+                <div class="logo fl">
                 <a href="" title="兰州理工大学幼儿园">
                     <img src="../assets/img/logo.png" width="320" height="240" border="0" alt="兰州理工大学幼儿园" title="兰州理工大学幼儿园">
-                </a><!--#endeditable-->
+                </a>
                 </div>
                 <div class="top-r fr">
-                    <div class="top-a"><!--#begineditable viewid="194642" name="主页|收藏"-->
+                    <div class="top-a">
                         <a onclick="javascript:dosuba194642a();" href="#" style="TEXT-DECORATION: none">
                             <span style="TEXT-DECORATION: none;COLOR: #fff;FONT-SIZE: 12px">添加收藏</span>
                         </a>
@@ -37,45 +36,41 @@
         <!-- nav start -->
         <div id="nav" class="nav-bg w100">
             <div class="nav">
-                <ul class="navbar"><!--#begineditable viewid="194644" name="网站导航"-->
+                <ul class="navbar">
                     <li>
                         <div class="nav-hh">
-                            <a href="index.html" title="首页">
-                                <div class="nav-img bi1">
-                                    <img src="../assets/img/i0.png">
-                                </div>
-                                <div class="nav-h">首页</div>
-                            </a>
+                            <router-link to="/" @click.native="flushCom">
+                                <a href="index.html" title="首页">
+                                    <div class="nav-img bi1">
+                                        <img src="../assets/img/i0.png">
+                                    </div>
+                                    <div class="nav-h">首页</div>
+                                </a>
+                            </router-link>
                         </div>
                     </li>
                     <li>
                         <div class="nav-hh">
-                            <a href="jdxw.html" title="焦点新闻">
-                                <div class="nav-img bi2">
-                                    <img src="../assets/img/i1.png">
-                                </div>
-                                <div class="nav-h">焦点新闻</div>
-                            </a>
+                            <router-link to="jdxw">
+                                <a href="javascript:void(0)" title="焦点新闻">
+                                    <div class="nav-img bi2">
+                                        <img src="../assets/img/i1.png">
+                                    </div>
+                                    <div class="nav-h">焦点新闻</div>
+                                </a>
+                            </router-link>
                         </div>
                     </li>
                     <li>
                         <div class="nav-hh">
-                            <a href="ysjj.html" title="园所简介">
-                                <div class="nav-img bi3">
-                                    <img src="../assets/img/i2.png">
-                                </div>
-                                <div class="nav-h">园所简介</div>
-                            </a>
-                        </div>
-                        <div class="nav-son">
-                            <ul>
-                                <li><a href="ysjj/jbgk.htm" title="基本概况">基本概况</a> </li>
-                                <li><a href="ysjj/jgsz.htm" title="机构设置">机构设置</a> </li>
-                                <li><a href="ysjj/yfjs.htm" title="园风建设">园风建设</a> </li>
-                                <li><a href="ysjj/jyln.htm" title="教育理念">教育理念</a> </li>
-                                <li><a href="ysjj/szll.htm" title="师资力量">师资力量</a> </li>
-                                <li><a href="ysjj/yshj.htm" title="园所环境">园所环境</a> </li>
-                            </ul>
+                            <router-link to="ysjs">
+                                <a href="javascript:void(0)" title="园所介绍">
+                                    <div class="nav-img bi2">
+                                        <img src="../assets/img/i2.png">
+                                    </div>
+                                    <div class="nav-h">园所介绍</div>
+                                </a>
+                            </router-link>
                         </div>
                     </li>
                     <li>
@@ -105,7 +100,6 @@
                         </div>
                         <div class="nav-son">
                             <ul>
-                                <li><a href="wsbj/rcgl.htm" title="日常管理">日常管理</a> </li>
                                 <li><a href="wsbj/bjxc.htm" title="保健宣传">保健宣传</a> </li>
                                 <li><a href="wsbj/yeys.htm" title="幼儿饮食">幼儿饮食</a> </li>
                             </ul>
@@ -122,7 +116,6 @@
                         </div>
                         <div class="nav-son">
                             <ul>
-                                <li><a href="jygy/yeyyx.html" title="幼儿园邮箱">幼儿园邮箱</a> </li>
                                 <li><a href="jygy/gbmdh.html" title="各部门电话">各部门电话</a> </li>
                                 <li><a href="jygy/jzxx.html" title="家长学校">家长学校</a> </li>
                             </ul>
@@ -146,18 +139,14 @@
                     </li>
                     <li>
                         <div class="nav-hh">
-                            <a href="yezs.html" title="幼儿招生">
-                                <div class="nav-img bi8">
-                                    <img src="../assets/img/i7.png">
-                                </div>
-                                <div class="nav-h">幼儿招生</div>
-                            </a>
-                        </div>
-                        <div class="nav-son">
-                            <ul>
-                                <li><a href="yezs/ryzs.html" title="入园招生">入园招生</a> </li>
-                                <li><a href="yezs/zjzs.html" title="早教招生">早教招生</a> </li>
-                            </ul>
+                            <router-link to="yezs">
+                                <a href="" title="幼儿招生">
+                                    <div class="nav-img bi8">
+                                        <img src="../assets/img/i7.png">
+                                    </div>
+                                    <div class="nav-h">幼儿招生</div>
+                                </a>
+                            </router-link>
                         </div>
                     </li>
                     <li>
@@ -172,7 +161,6 @@
                         <div class="nav-son">
                             <ul>
                                 <li><a href="jzxz/xsryjzxz1.html" title="新生入园家长须知">新生入园家长须知</a> </li>
-                                <li><a href="jzxz/qzzjbjzxz.html" title="求真早教班家长须知">求真早教班家长须知</a> </li>
                                 <li><a href="jzxz/jfxz.html" title="缴费须知">缴费须知</a> </li>
                             </ul>
                         </div>
@@ -187,7 +175,12 @@
 <script>
 import $ from 'jquery';
 export default {
-  name: 'Header'
+  name: 'Header',
+  methods:{
+　　　　flushCom:function(){
+　　　　　　this.$router.go(0);  //强制进行刷新加载js代码
+　　　　}
+　　}
 }
 $(document).ready(function () {
     $(window).scroll(function () {

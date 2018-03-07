@@ -1,19 +1,20 @@
 <template>
   <div id="app">
     <Header/>
-    <IndexBody/>
+    <div class="content">
+      <router-view></router-view>
+    </div>
     <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
-import IndexBody from './components/IndexBody'
 import Footer from './components/Footer'
 export default {
   name: 'App',
   components: {
-    Header, IndexBody,Footer
+    Header, Footer
   }
 }
 </script>
