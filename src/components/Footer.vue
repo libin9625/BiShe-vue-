@@ -20,18 +20,18 @@
     <div class="btn">
         <ul>
             <!-- <script language="javascript" src="system/resource/js/openlink.js"></script> -->
-            <li>
-                <div class="btn-i"><img src="../assets/img/c1.png"></div>
-                <a href="http://www.buaa.edu.cn/" title="">兰理官网</a> 
-            </li>
-            <li>
-                <div class="btn-i"><img src="../assets/img/c2.png"></div>
-                <a href="yezs.htm" title="">幼儿招生</a> 
-            </li>
-            <li>    
-                <div class="btn-i"><img src="../assets/img/c3.png"></div>
-                <a href="bjdt.htm" title="">班级动态</a> 
-            </li>
+            <a href="http://www.gsut.edu.cn/w/" title="">
+                <li>
+                    <div class="btn-i"><img src="../assets/img/c1.png"></div>
+                    <a href="javascript:void(0)" title="">兰理官网</a>
+                </li>
+            </a>
+            <router-link to="login">
+                <li>
+                    <div class="btn-i"><img src="../assets/img/c2.png"></div>
+                    <a href="javascript:void(0)" title="">用户登录</a> 
+                </li>
+            </router-link>
         </ul>
         <div class="btn-a">
             <div class="ewm"></div>

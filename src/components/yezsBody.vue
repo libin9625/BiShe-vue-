@@ -1,10 +1,11 @@
 <style>
 #submitContent{padding-top: 20px;padding-bottom: 20px;}
 #submitForm{padding: 20px;width:500px;margin-left:480px;background-color: #EDFAFF;border-radius: 3px;}
-.avatar-uploader .el-upload {margin-left:40px;border: 1px dashed #d9d9d9;border-radius: 6px;cursor: pointer;position: relative;overflow: hidden;}
+.avatar-uploader .el-upload{margin-left:40px;border: 1px dashed #d9d9d9;border-radius: 6px;cursor: pointer;position: relative;overflow: hidden;}
 .avatar-uploader .el-upload:hover {border-color: #409EFF;}
 .avatar-uploader-icon {font-size: 28px;color: #8c939d;width: 178px;height: 178px;line-height: 178px;text-align: center;}
 .avatar {width: 178px;height: 178px;display: block;}
+.attention{color: red;font-size: 15px;text-align: center;margin: 25px;}
 </style>
 
 <template>
@@ -28,7 +29,7 @@
                             </el-form-item>
                         </el-col>
                     </el-form-item>
-                    <el-form-item label="上传照片" required style="float:left"></el-form-item>
+                    <el-form-item label="上传幼儿证件照片" required style="float:left"></el-form-item>
                     <el-upload
                         class="avatar-uploader"
                         action="https://jsonplaceholder.typicode.com/posts/"
@@ -48,9 +49,10 @@
                         <el-input type="textarea" v-model="ruleForm.desc"></el-input>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
+                        <el-button type="primary" @click="submitForm('ruleForm')">立即提交</el-button>
                         <el-button @click="resetForm('ruleForm')">重置</el-button>
                     </el-form-item>
+                    <div class="attention">注意：如果信息审核成功，教师会与你进行联系并确定身份信息，请耐心等候！</div>
                 </el-form>
             </div>
         </div>

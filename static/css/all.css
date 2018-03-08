@@ -226,19 +226,19 @@ span.date2{display: block;position: absolute;right:10px;top:0px;width:180px;text
 .bb5 .zb-r{background:#a46cd9;}
 .bb6 .zb-r{background:#ed7dab;}
 
-.btn{position:fixed;width:34px;right:15px;top:50%;z-index:9999999;font-size:12px;}
+.btn{position:fixed;width:45px;right:40px;top:50%;z-index:9999999;font-size:12px;}
 .btn ul{background:#686868;padding:20px 0px;}
-.btn ul li{width:34px;height:34px;margin:5px 0px;position: relative;text-align:center;cursor:pointer;}
-.btn ul li div.btn-i{width:34px;height:34px;}
-.btn ul li div.btn-i img{display:block;margin: auto;width:34px;height:34px;}
-.btn ul li a{display:none;width:70px;text-align: center;height:34px;line-height:34px;position: absolute;right:34px;top:0px;font-size:12px;background:#686868;color:#fff;}
+.btn ul li{width:45px;height:45px;margin:5px 0px;position: relative;text-align:center;cursor:pointer;}
+.btn ul li div.btn-i{width:45px;height:45px;}
+.btn ul li div.btn-i img{display:block;margin: auto;width:45px;height:45px;}
+.btn ul li a{display:none;width:70px;text-align: center;height:45px;line-height:45px;position: absolute;right:34px;top:0px;font-size:12px;background:#686868;color:#fff;}
 .btn ul li:hover div.btn-i{background:url(../img/cb.png) center no-repeat;}
 .btn ul li:hover a{display: block;}
 .btn-a{margin-top:100px;}
-.btn-a div{width:34px;height:34px;margin-bottom:3px;}
+.btn-a div{width:45px;height:45px;margin-bottom:3px;}
 .btn-a div.ewm{position: relative;background:url(../img/c4.png) center no-repeat;cursor:pointer;}
 .btn-a div.ewm img{display:none;position: absolute;top:0px;right:40px;width:120px;height:120px;}
-.btn-a div.top-bt a{display: block;width:34px;height:34px;background:url(../img/c5.png) center no-repeat;}
+.btn-a div.top-bt a{display: block;width:45px;height:45px;background:url(../img/c5.png) center no-repeat;}
 .btn-a div.ewm:hover img{display: block;}
 
 .live1 a:hover,.top-a a:hover,#ifocus_tx ul li a:hover,.p1-r a:hover,.p1-r ul li a:hover div.date,.p3-Slide .bd li a:hover .tt,.news-h a:hover,.news-ul ul li a:hover,.news-ul ul li a:hover span.date1,.slideTxtBox .hd ul li a:hover,.slideTxtBox .bd ul li a:hover,.scrollBox .bd ul li a:hover .tt1,.list ul.list-li li a:hover span.date2,ul.list-box li a:hover .box-con,.nav-son ul li a:hover,.zb1-a a:hover,.zb-a a:hover,.zb-con ul li a:hover{color:#ffb400;}
