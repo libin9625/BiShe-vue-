@@ -3,10 +3,10 @@
         <div class="cen-bg w100">
             <div class="zhy w1000">
                 <div class="zb1">
-                    <div class="zb1-i"><img src="../assets/img/ys1.jpg" width="462" height="260" border="0"></div>
+                    <div class="zb1-i"><img src="../../assets/img/ys1.jpg" width="462" height="260" border="0"></div>
                     <div class="zb1-con">
                         <div class="zb1-h">园所介绍</div>
-                        <div class="zb1-tt">   
+                        <div class="zb1-tt">
                             <div id="vsb_content_2_2853_u61">
                                 <div id="vsb_content_2">
                                     <p class="vsbcontent_start"><strong>（一）基本概况</strong></p>
@@ -71,7 +71,7 @@
                 <div class="zb-ul">
                     <div class="zb-li bb1">
                         <div class="zb-top">
-                            <div class="zb-i"><img src="../assets/img/ys2.jpg" width="222" height="126" border="0"></div>
+                            <div class="zb-i"><img src="../../assets/img/ys2.jpg" width="222" height="126" border="0"></div>
                             <div class="zb-r">
                                 <div class="zb-h">园风建设</div>
                                 <div class="zb-a"><a href="ysjj/yfjs.htm">查看更多&gt;&gt;</a></div>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="zb-li bb2">
                         <div class="zb-top">
-                            <div class="zb-i"><img src="../assets/img/ys3.jpg" width="222" height="126" border="0"></div>
+                            <div class="zb-i"><img src="../../assets/img/ys3.jpg" width="222" height="126" border="0"></div>
                             <div class="zb-r">
                                 <div class="zb-h">教育理念</div>
                                 <div class="zb-a"><a href="ysjj/jyln.htm">查看更多&gt;&gt;</a></div>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="zb-li bb3">
                         <div class="zb-top">
-                            <div class="zb-i"><img src="../assets/img/ys4.jpg" width="222" height="126" border="0"></div>
+                            <div class="zb-i"><img src="../../assets/img/ys4.jpg" width="222" height="126" border="0"></div>
                             <div class="zb-r">
                                 <div class="zb-h">师资力量</div>
                                 <div class="zb-a"><a href="ysjj/szll.htm">查看更多&gt;&gt;</a></div>
@@ -137,7 +137,7 @@
                     </div>
                     <div class="zb-li bb4">
                         <div class="zb-top">
-                            <div class="zb-i"><img src="../assets/img/ys5.jpg" width="222" height="126" border="0"></div>
+                            <div class="zb-i"><img src="../../assets/img/ys5.jpg" width="222" height="126" border="0"></div>
                             <div class="zb-r">
                                 <div class="zb-h">园所环境</div>
                                 <div class="zb-a"><a href="ysjj/yshj.htm">查看更多&gt;&gt;</a></div>
@@ -149,10 +149,10 @@
                 <div class="zb1" style="margin-top: 12px">
                     <div class="zb1-con" style="float: left">
                         <div class="zb1-h">组织结构图</div>
-                        <div class="zb1-tt">   
+                        <div class="zb1-tt">
                             <div id="vsb_content_2850_u151">
                                 <div id="vsb_content">
-                                    <p style="text-align: center"><img src="../assets/img/313C8ECC3B647F44E45DDDA633A_9C70CC14_215E3.jpg" vurl="/_vsl/95E0E313C8ECC3B647F44E45DDDA633A/9C70CC14/215E3?e=.jpg" vsbhref="vurl" vheight="" vwidth="" orisrc="/__local/9/5E/0E/313C8ECC3B647F44E45DDDA633A_9C70CC14_215E3.jpg" class="img_vsb_content"></p>
+                                    <p style="text-align: center"><img src="../../assets/img/313C8ECC3B647F44E45DDDA633A_9C70CC14_215E3.jpg" vurl="/_vsl/95E0E313C8ECC3B647F44E45DDDA633A/9C70CC14/215E3?e=.jpg" vsbhref="vurl" vheight="" vwidth="" orisrc="/__local/9/5E/0E/313C8ECC3B647F44E45DDDA633A_9C70CC14_215E3.jpg" class="img_vsb_content"></p>
                                 </div>
                             </div>
                             <span id="vsb_content_2850_u15" name="vsb_content_2850_u15"></span>
@@ -160,14 +160,14 @@
                         <div class="zb1-a"><a href="info/1185/2850.htm">查看更多>></a></div>
                     </div>
                     <div class="zb1-i" style="float: right">
-                        <img src="../assets/img/ys1.jpg" width="462" height="260" border="0">
+                        <img src="../../assets/img/ys1.jpg" width="462" height="260" border="0">
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </template>
-    
+
 <script>
 export default {
     name: 'ysjsBody'

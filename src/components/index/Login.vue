@@ -1,6 +1,6 @@
 <style>
 #loginContent{padding-top: 20px;padding-bottom: 20px;}
-#loginForm{padding: 20px;width:500px;margin-left:480px;background-color: #EDFAFF;border-radius: 3px;}
+#loginForm{padding: 20px;width:500px;margin:0 auto;background-color: #EDFAFF;border-radius: 3px;}
 </style>
 
 <template>
@@ -8,7 +8,7 @@
         <div class="cen-bg w100">
             <div id="loginContent">
                 <el-form id="loginForm" :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="120px" class="demo-ruleForm">
-                    <el-form-item label="学号" prop="number">
+                    <el-form-item label="账号" prop="number">
                         <el-input v-model.number="ruleForm2.number"></el-input>
                     </el-form-item>
                     <el-form-item label="密码" prop="pass">
@@ -37,26 +37,6 @@ import ElementUI from 'element-ui'
 export default {
     name: 'Login',
     data() {
-        var checkName = (rule, value, callback) => {
-            if (!value) {
-                callback(new Error('请输入学号!'));
-            }
-            setTimeout(() => {
-                if (!Number.isInteger(value)) {
-                    callback(new Error('请输入正确的学号！'));
-                }
-            }, 1000);
-        };
-        var validatePass = (rule, value, callback) => {
-            if (value === '') {
-                callback(new Error('请输入密码！'));
-            } else {
-                if (this.ruleForm2.checkPass !== '') {
-                    this.$refs.ruleForm2.validateField('checkPass');
-                }
-                callback();
-            }
-        };
         return {
             ruleForm2: {
                 pass: '',
@@ -65,10 +45,10 @@ export default {
             },
             rules2: {
                 pass: [
-                    { required:true, validator: validatePass,  trigger: 'blur'}
+                    { required:true, message: '请输入密码！', trigger: 'blur'}
                 ],
                 number: [
-                    { required:true, validator: checkName, trigger: 'blur'}
+                    { required:true, message: '请输入账号！', trigger: 'blur'}
                 ],
                 identity:[
                     { required: true, message: '请选择登录身份！', trigger: 'change' }
@@ -86,6 +66,12 @@ export default {
                     return false;
                 }
             });
+            var vm = this;
+            // console.log(vm);
+            var url = 'http://localhost:3000/login';
+            // console.log(vm.$data.ruleForm2.number);
+            // console.log(vm.$data.ruleForm2.pass);
+            // console.log(vm.$data.ruleForm2.identity);
         },
         resetForm(formName) {
             this.$refs[formName].resetFields();
@@ -94,4 +80,3 @@ export default {
 }
 </script>
 
-    

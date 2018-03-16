@@ -22,14 +22,14 @@
             <!-- <script language="javascript" src="system/resource/js/openlink.js"></script> -->
             <a href="http://www.gsut.edu.cn/w/" title="">
                 <li>
-                    <div class="btn-i"><img src="../assets/img/c1.png"></div>
+                    <div class="btn-i"><img src="../../assets/img/c1.png"></div>
                     <a href="javascript:void(0)" title="">兰理官网</a>
                 </li>
             </a>
             <router-link to="login">
                 <li>
-                    <div class="btn-i"><img src="../assets/img/c2.png"></div>
-                    <a href="javascript:void(0)" title="">用户登录</a> 
+                    <div class="btn-i"><img src="../../assets/img/c2.png"></div>
+                    <a href="javascript:void(0)" title="">用户登录</a>
                 </li>
             </router-link>
         </ul>

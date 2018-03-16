@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import IndexBody from '@/components/IndexBody'
-import jdxwBody from '@/components/jdxwBody'
-import ysjsBody from '@/components/ysjsBody'
-import yezsBody from '@/components/yezsBody'
-import Login from '@/components/Login'
+import IndexBody from '../components/index/IndexBody.vue'
+import jdxwBody from '../components/index/jdxwBody.vue'
+import ysjsBody from '../components/index/ysjsBody.vue'
+import yezsBody from '../components/index/yezsBody.vue'
+import Login from '../components/index/login.vue'
 
 Vue.use(Router)
 

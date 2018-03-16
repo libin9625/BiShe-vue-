@@ -1,6 +1,6 @@
 <style>
 #submitContent{padding-top: 20px;padding-bottom: 20px;}
-#submitForm{padding: 20px;width:500px;margin-left:480px;background-color: #EDFAFF;border-radius: 3px;}
+#submitForm{padding: 20px;width:500px;margin: 0 auto;background-color: #EDFAFF;border-radius: 3px;}
 .avatar-uploader .el-upload{margin-left:40px;border: 1px dashed #d9d9d9;border-radius: 6px;cursor: pointer;position: relative;overflow: hidden;}
 .avatar-uploader .el-upload:hover {border-color: #409EFF;}
 .avatar-uploader-icon {font-size: 28px;color: #8c939d;width: 178px;height: 178px;line-height: 178px;text-align: center;}
@@ -62,7 +62,7 @@
 <script>
 import 'element-ui/lib/theme-chalk/index.css'
 import ElementUI from 'element-ui'
-import {isvalidPhone} from '../assets/js/validate'
+import {isvalidPhone} from '../../assets/js/validate'
 
 var validPhone=(rule, value,callback)=>{
     if (!value){

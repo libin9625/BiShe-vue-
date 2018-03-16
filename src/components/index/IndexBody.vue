@@ -11,17 +11,17 @@
                         <!--#begineditable viewid="194654" name="焦点新闻大图片"-->
                             <li>
                                 <a href="info/1182/2843.htm" target="_blank" title="兰州理工大学幼儿园获评兰州市餐饮服务单位食品安全量化分级最高等级（A级三星）">
-                                    <img src="../assets/img/CC518ACD2A50E7379C95D564B1C_7F63D3E5_252DA.jpg">
+                                    <img src="../../assets/img/CC518ACD2A50E7379C95D564B1C_7F63D3E5_252DA.jpg">
                                 </a>
                             </li>
                             <li>
                                 <a href="info/1182/2844.htm" target="_blank" title="兰州理工大学幼儿园作为卫生保健示范园面向全市开放观摩">
-                                    <img src="../assets/img/99B897D9C4DF5409C0C48CC9E2E_D8AA93FD_E6BA.jpg">
+                                    <img src="../../assets/img/99B897D9C4DF5409C0C48CC9E2E_D8AA93FD_E6BA.jpg">
                                 </a>
                             </li>
                             <li>
                                 <a href="info/1182/2845.htm" target="_blank" title="兰州理工大学幼儿园顺利召开“十三五”课题开题论证会">
-                                    <img src="../assets/img/59CE3F4B930435EE7F0B88540FA_22633A9D_D80C.jpg">
+                                    <img src="../../assets/img/59CE3F4B930435EE7F0B88540FA_22633A9D_D80C.jpg">
                                 </a>
                             </li>
                         </ul>
@@ -43,9 +43,9 @@
                 </div>
                 <div id="ifocus_btn">
                     <ul><!--#begineditable viewid="194656" name="焦点新闻小图片"-->
-                        <li><img src="../assets/img/CC518ACD2A50E7379C95D564B1C_7F63D3E5_252DA.jpg"> </li>
-                        <li><img src="../assets/img/99B897D9C4DF5409C0C48CC9E2E_D8AA93FD_E6BA.jpg"> </li>
-                        <li><img src="../assets/img/59CE3F4B930435EE7F0B88540FA_22633A9D_D80C.jpg"> </li>
+                        <li><img src="../../assets/img/CC518ACD2A50E7379C95D564B1C_7F63D3E5_252DA.jpg"> </li>
+                        <li><img src="../../assets/img/99B897D9C4DF5409C0C48CC9E2E_D8AA93FD_E6BA.jpg"> </li>
+                        <li><img src="../../assets/img/59CE3F4B930435EE7F0B88540FA_22633A9D_D80C.jpg"> </li>
                     </ul>
                 </div>
             </div>
@@ -83,20 +83,20 @@
         </div>
         <div class="part2 w1000">
             <div class="part2-h">
-                <img src="../assets/img/h1.png">
+                <img src="../../assets/img/h1.png">
             </div>
             <ul class="tabsList" style="margin: 0px auto">
                 <!--#begineditable viewid="194657" name="基本概况"-->
                 <li class="tit">
                     <div class="tabBody">
                         <div class="sm-l">
-                            <img src="../assets/img/85410782590C5791CF32E126CFB_CF80816F_211A6.jpg">
+                            <img src="../../assets/img/85410782590C5791CF32E126CFB_CF80816F_211A6.jpg">
                         </div>
                         <div class="sm-r">（一）基本概况幼儿园创建于1954年，距今已有60余年历史。2010大学投入3000万重新翻建园所，硬件环境得到有效改善。现占地面积10986平方米，建筑面积7000余平方米，绿化...</div>
                     </div>
                     <div class="tit-h tb1" style="font-size: 14px">
                         <a href="info/1184/2853.htm" target="_blank" title="园所介绍">
-                            <img src="../assets/img/t1.png">
+                            <img src="../../assets/img/t1.png">
                             <span>基本情况</span>
                         </a>
                     </div>
@@ -104,13 +104,13 @@
                 <li class="tit">
                     <div class="tabBody">
                         <div class="sm-l">
-                            <img src="../assets/img/E182F5A6A75F98775C66CEF974A_1CF52AF0_1CB41.jpg">
+                            <img src="../../assets/img/E182F5A6A75F98775C66CEF974A_1CF52AF0_1CB41.jpg">
                         </div>
                         <div class="sm-r">◾全园共有106名教工。◾教师92%为大专以上学历◾有市区级优秀及骨干教师7名◾100%保育员通过等级考试◾三位园长均为本科以上学历，并具有园长...</div>
                     </div>
                     <div class="tit-h tb1" style="font-size: 14px">
                         <a href="info/1188/2851.htm" target="_blank" title="师资队伍">
-                            <img src="../assets/img/t2.png">
+                            <img src="../../assets/img/t2.png">
                             <span>师资力量</span>
                         </a>
                     </div>
@@ -118,13 +118,13 @@
                 <li class="tit">
                     <div class="tabBody">
                         <div class="sm-l">
-                            <img src="../assets/img/D2F004672815075F9D25529CB6D_05461200_1FDB0.jpg">
+                            <img src="../../assets/img/D2F004672815075F9D25529CB6D_05461200_1FDB0.jpg">
                         </div>
                         <div class="sm-r">教育理念“慢教育、细照料，静待孩子成为最好的自己”慢教育：“让孩子赢在起跑线上”似乎像一道紧箍咒，让家长对孩子的未来充满担心。种子发芽需要等待，孩子的成长，...</div>
                     </div>
                     <div class="tit-h tb1" style="font-size: 14px">
                         <a href="info/1187/2863.htm" target="_blank" title="教育理念">
-                            <img src="../assets/img/t5.png">
+                            <img src="../../assets/img/t5.png">
                             <span>教育理念</span>
                         </a>
                     </div>
@@ -132,13 +132,13 @@
                 <li class="tit">
                     <div class="tabBody">
                         <div class="sm-l">
-                            <img src="../assets/img/313C8ECC3B647F44E45DDDA633A_9C70CC14_215E3.jpg">
+                            <img src="../../assets/img/313C8ECC3B647F44E45DDDA633A_9C70CC14_215E3.jpg">
                         </div>
                         <div class="sm-r"></div>
                     </div>
                     <div class="tit-h tb1" style="font-size: 14px">
                         <a href="info/1185/2850.htm" target="_blank" title="组织结构图">
-                            <img src="../assets/img/t6.png">
+                            <img src="../../assets/img/t6.png">
                             <span>机构设置</span>
                         </a>
                     </div>
@@ -151,7 +151,7 @@
                     <ul>
                         <li>
                             <a href="info/1089/2833.htm" target="_blank" title="兰州理工大学幼儿园2018年1月食谱">
-                                <img src="../assets/img/38CA80D8290897B9781EBFA35DA_63E31AAA_9527.png">
+                                <img src="../../assets/img/38CA80D8290897B9781EBFA35DA_63E31AAA_9527.png">
                                 <div class="tt">兰州理工大学幼儿园2018年1月食谱</div>
                             </a>
                         </li>
@@ -201,21 +201,21 @@
         </div>
         <div class="part4 w1000">
             <div class="part4-h">
-                <img src="../assets/img/h2.png">
+                <img src="../../assets/img/h2.png">
             </div>
             <div class="slideTxtBox">
                 <div class="hd">
                     <ul>
                         <li style="border-right: #fff 1px solid">
-                            <span class="hd-h"><img src="../assets/img/b1.png">班级动态</span>
+                            <span class="hd-h"><img src="../../assets/img/b1.png">班级动态</span>
                             <a href="bjdt.htm" target="_blank">更多&gt;&gt;</a>
                         </li>
                         <li style="border-right: #fff 1px solid;width: 332px">
-                            <span class="hd-h"><img src="../assets/img/b2.png">园所文化</span>
+                            <span class="hd-h"><img src="../../assets/img/b2.png">园所文化</span>
                             <a href="yswh.htm" target="_blank">更多&gt;&gt;</a>
                         </li>
                         <li>
-                            <span class="hd-h"><img src="../assets/img/b3.png">早教基地</span>
+                            <span class="hd-h"><img src="../../assets/img/b3.png">早教基地</span>
                             <a href="zjjd.htm" target="_blank">更多&gt;&gt;</a>
                         </li>
                     </ul>
@@ -251,14 +251,14 @@
                 <div class="clear"></div>
                 <div class="bd">
                     <ul class="piclist">
-                        <li><a href="info/1091/2267.htm" target="_blank" title="阳光体育活动"><img src="../assets/img/462EAA0579BC035B04E3EC70569_90A0A1A3_1F1CC4.jpg"><span class="tt1">阳光体育活动</span></a> </li>
-                        <li><a href="info/1091/2783.htm" target="_blank" title="精彩瞬间"><img src="../assets/img/6E643852D0394EF085F724DE0DB_AF617FA4_D9B6.jpg"><span class="tt1">精彩瞬间</span></a> </li>
-                        <li><a href="info/1091/2549.htm" target="_blank" title="绿园感受春天，大胆写生"><img src="../assets/img/F48D17D73D945041E39900CB9E1_D4C9741B_27D0B.jpg"><span class="tt1">绿园感受春天，大胆写生</span></a> </li>
-                        <li><a href="info/1091/2548.htm" target="_blank" title="新媒体课"><img src="../assets/img/E464D2CCDF0087DE4DE97064B77_9882F568_1AB6B.jpg"><span class="tt1">新媒体课</span></a> </li>
-                        <li><a href="info/1091/2547.htm" target="_blank" title="新年开放活动"><img src="../assets/img/F9BCB50A4FA7D529C9290AF576D_14D7CFF5_1CD4A.jpg"><span class="tt1">新年开放活动</span></a> </li>
-                        <li><a href="info/1091/2546.htm" target="_blank" title="童话剧"><img src="../assets/img/456C7FF50C988881A148F335F74_14C5CA15_18353.jpg"><span class="tt1">童话剧</span></a> </li>
-                        <li><a href="info/1091/1631.htm" target="_blank" title="科学实验走进兰州理工大学幼儿园"><img src="../assets/img/21B8620775A51A155A99F7D07C2_21E56ECE_2F018.jpg"><span class="tt1">科学实验走进兰州理工大学幼儿园</span></a> </li>
-                        <li><a href="info/1091/1905.htm" target="_blank" title="快乐天使"><img src="../assets/img/4ECE69BC0AC510806D71474677C_958CD6BE_3FEC5.jpg"><span class="tt1">快乐天使</span></a> </li>
+                        <li><a href="info/1091/2267.htm" target="_blank" title="阳光体育活动"><img src="../../assets/img/462EAA0579BC035B04E3EC70569_90A0A1A3_1F1CC4.jpg"><span class="tt1">阳光体育活动</span></a> </li>
+                        <li><a href="info/1091/2783.htm" target="_blank" title="精彩瞬间"><img src="../../assets/img/6E643852D0394EF085F724DE0DB_AF617FA4_D9B6.jpg"><span class="tt1">精彩瞬间</span></a> </li>
+                        <li><a href="info/1091/2549.htm" target="_blank" title="绿园感受春天，大胆写生"><img src="../../assets/img/F48D17D73D945041E39900CB9E1_D4C9741B_27D0B.jpg"><span class="tt1">绿园感受春天，大胆写生</span></a> </li>
+                        <li><a href="info/1091/2548.htm" target="_blank" title="新媒体课"><img src="../../assets/img/E464D2CCDF0087DE4DE97064B77_9882F568_1AB6B.jpg"><span class="tt1">新媒体课</span></a> </li>
+                        <li><a href="info/1091/2547.htm" target="_blank" title="新年开放活动"><img src="../../assets/img/F9BCB50A4FA7D529C9290AF576D_14D7CFF5_1CD4A.jpg"><span class="tt1">新年开放活动</span></a> </li>
+                        <li><a href="info/1091/2546.htm" target="_blank" title="童话剧"><img src="../../assets/img/456C7FF50C988881A148F335F74_14C5CA15_18353.jpg"><span class="tt1">童话剧</span></a> </li>
+                        <li><a href="info/1091/1631.htm" target="_blank" title="科学实验走进兰州理工大学幼儿园"><img src="../../assets/img/21B8620775A51A155A99F7D07C2_21E56ECE_2F018.jpg"><span class="tt1">科学实验走进兰州理工大学幼儿园</span></a> </li>
+                        <li><a href="info/1091/1905.htm" target="_blank" title="快乐天使"><img src="../../assets/img/4ECE69BC0AC510806D71474677C_958CD6BE_3FEC5.jpg"><span class="tt1">快乐天使</span></a> </li>
                     </ul>
                 </div>
                 <a class="next" href="javascript:void(0)"></a>
