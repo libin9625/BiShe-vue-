@@ -1,19 +1,31 @@
 let express = require('express');
 let route = express.Router();
-let StudentDB = require('../model/StudentDB');
+let TeacherDB = require('../model/TeacherDB');
 
 // 查询所有
 route.get('/findAll',(req,resp)=>{
-    StudentDB.findAll().then(function(result){
+    TeacherDB.findAll().then(function(result){
       resp.send(result);
     }).catch(function(err){
-      console.log(err);
+      resp.send(err);
     })
 });
 
 //单个查询
 route.get('/findById',(req,resp)=>{
-  StudentDB.findById(req.query.id).then(function(result){
+  console.log(req.query.id);
+  TeacherDB.findById(req.query.id).then(function(result){
+    resp.send(result);
+  }).catch(function(err){
+    resp.send(err);
+  })
+})
+
+//所需参数
+// update({'name':'李斌'},6);
+//修改
+route.post('/update',(req,resp)=>{
+  TeacherDB.update(req.body,req.body.id).then(function(result){
     resp.send(result);
   }).catch(function(err){
     resp.send(err);
@@ -22,16 +34,7 @@ route.get('/findById',(req,resp)=>{
 
 //删除
 route.get('/delete',(req,resp)=>{
-  StudentDB.delete(req.query.id).then(function(result){
-    resp.send(result);
-  }).catch(function(err){
-    resp.send(err);
-  })
-})
-
-//修改
-route.post('/update',(req,resp)=>{
-  StudentDB.update(req.body,req.body.id).then(function(result){
+  TeacherDB.delete(req.query.id).then(function(result){
     resp.send(result);
   }).catch(function(err){
     resp.send(err);
@@ -40,7 +43,7 @@ route.post('/update',(req,resp)=>{
 
 //添加
 route.post('/save',(req,resp)=>{
-  StudentDB.save(req.body).then(function(result){
+  TeacherDB.save(req.body).then(function(result){
     resp.send(result);
   }).catch(function(err){
     resp.send(err);

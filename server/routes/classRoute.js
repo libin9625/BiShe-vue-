@@ -1,10 +1,10 @@
 let express = require('express');
 let route = express.Router();
-let StudentDB = require('../model/StudentDB');
+let ClassDB = require('../model/ClassDB');
 
 // 查询所有
 route.get('/findAll',(req,resp)=>{
-    StudentDB.findAll().then(function(result){
+    ClassDB.findAll().then(function(result){
       resp.send(result);
     }).catch(function(err){
       console.log(err);
@@ -13,7 +13,7 @@ route.get('/findAll',(req,resp)=>{
 
 //单个查询
 route.get('/findById',(req,resp)=>{
-  StudentDB.findById(req.query.id).then(function(result){
+  ClassDB.findById(req.query.id).then(function(result){
     resp.send(result);
   }).catch(function(err){
     resp.send(err);
@@ -22,7 +22,7 @@ route.get('/findById',(req,resp)=>{
 
 //删除
 route.get('/delete',(req,resp)=>{
-  StudentDB.delete(req.query.id).then(function(result){
+  ClassDB.delete(req.query.id).then(function(result){
     resp.send(result);
   }).catch(function(err){
     resp.send(err);
@@ -31,7 +31,7 @@ route.get('/delete',(req,resp)=>{
 
 //修改
 route.post('/update',(req,resp)=>{
-  StudentDB.update(req.body,req.body.id).then(function(result){
+  ClassDB.update(req.body,req.body.id).then(function(result){
     resp.send(result);
   }).catch(function(err){
     resp.send(err);
@@ -40,7 +40,7 @@ route.post('/update',(req,resp)=>{
 
 //添加
 route.post('/save',(req,resp)=>{
-  StudentDB.save(req.body).then(function(result){
+  ClassDB.save(req.body).then(function(result){
     resp.send(result);
   }).catch(function(err){
     resp.send(err);

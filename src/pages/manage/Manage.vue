@@ -95,7 +95,7 @@ $bgColor_header:#448db8;
   // 头部样式结束
   // 底部样式开始
   .footer {
-    position:absolute;
+    position: fixed;
     background-color:$bgColor_header;
     left:0;right:0;
     bottom:0;

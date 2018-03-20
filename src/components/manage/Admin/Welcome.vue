@@ -2,7 +2,7 @@
     <div id="welcome">
         <i class="fa fa-user-circle-o fa-3x welcome-font"></i>
         <a class="welcome-font">李斌</a>
-        <span class="welcome-font">老师</span>
+        <span class="welcome-font">管理员</span>
         <br>
         <span class="welcome-font">欢迎您的登录！</span>
     </div>

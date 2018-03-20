@@ -11,7 +11,12 @@
           </ul>
         </div>
         <div class="manage_left_bottom">
-          <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background-color:#eff3f4"></el-tree>
+          <ul v-show="Visible">
+            <router-link to="/teacher/manageTeacher"><li>教师管理</li></router-link>
+            <router-link to="/teacher/manageStudent"><li>学生管理</li></router-link>
+            <router-link to="/teacher/manageCourse"><li>课程管理</li></router-link>
+            <router-link to="/teacher/manageClass"><li>班级管理</li></router-link>
+          </ul>
         </div>
       </div>
       <!-- 内容区右侧 -->
@@ -86,7 +91,13 @@ $bgColor_header:#448db8;
         left:0;right:0;
         padding:.1em 0;
         //padding:0 1em;
-
+        ul{
+          list-style: none;
+          li{
+            margin-top: 20px;
+            font-size: 18px;
+          }
+        }
         .el-menu {
           border-right:none;
         }
@@ -140,7 +151,7 @@ $bgColor_header:#448db8;
 
 <script>
 import BreadCrumb from '../BreadCrumb'
-import Welcome from './Welcome'
+import Welcome from './Welcome.vue'
 export default {
     name:'Teacher',
     components: {
@@ -150,53 +161,8 @@ export default {
       return {
         isCollapse: false,
         timeout:"10",
-        data: [{
-          label: '教师管理',
-          children: [{
-            label: '查看个人信息',
-          },
-          {
-            label: '修改个人信息'
-          }]
-        }, {
-          label: '学生管理',
-          children: [{
-            label: '查询学生信息',
-          }, {
-            label: '增加学生信息',
-          },{
-            label: '修改学生信息',
-          },{
-            label: '删除学生信息',
-          }]
-        }, {
-          label: '课程管理',
-          children: [{
-            label: '查询课程信息',
-          }, {
-            label: '增加课程信息',
-          },{
-            label: '修改课程信息',
-          },{
-            label: '删除课程信息',
-          }]
-        },{
-          label: '班级管理',
-          children: [{
-            label: '查询班级信息',
-          }, {
-            label: '增加班级信息',
-          },{
-            label: '修改班级信息',
-          },{
-            label: '删除班级信息',
-          }]
-        }],
-        defaultProps: {
-          children: 'children',
-          label: 'label'
-        }
-      };
+        Visible:true
+      }
     },
     computed:{
       collapseLeft (){
@@ -215,13 +181,11 @@ export default {
         console.log(this.isCollapse);
         console.log(key, keyPath);
       },
-      handleNodeClick(data) {
-        console.log(data);
-      },
       collapse(){
-      this.isCollapse = !this.isCollapse
-       //62
-      if(this.isCollapse){
+        this.isCollapse = !this.isCollapse;
+        this.Visible = !this.Visible;
+        //62
+        if(this.isCollapse){
 
         }
       }

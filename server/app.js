@@ -8,9 +8,9 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var studentRoute = require('./routes/studentRoute');
-// var courseRoute = require('./routes/courseRoute');
-// var clazzRoute = require('./routes/clazzRoute');
-// var studentCourseRoute = require('./routes/studentCourseRoute');
+var teacherRoute = require('./routes/teacherRoute');
+var courseRoute = require('./routes/courseRoute');
+var classRoute = require('./routes/classRoute');
 // var testRoute = require('./routes/testRoute');
 
 var app = express();
@@ -40,9 +40,9 @@ app.all('*', function(req, res, next) {
 //首页路由
 app.use('/', index);
 app.use('/student', studentRoute);
-// app.use('/course',courseRoute);
-// app.use('/clazz',clazzRoute);
-// app.use('/sc',studentCourseRoute);
+app.use('/teacher',teacherRoute);
+app.use('/course',courseRoute);
+app.use('/class',classRoute);
 // app.use('/test',testRoute);
 
 
