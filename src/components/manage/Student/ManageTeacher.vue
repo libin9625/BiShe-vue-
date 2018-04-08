@@ -65,6 +65,7 @@
 
   .el-button{
     margin-left: 400px;
+    margin-bottom: 0px!important;
   }
 
   .el-form-item{

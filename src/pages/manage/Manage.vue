@@ -1,17 +1,8 @@
 <template>
   <div id="manage">
-    <header class="header container-fluid">
-      <div class="row">
-        <div class="logo col-sm-6 ">
-          <i class="fa fa-book fa-2x"></i>
-          <a href="#">兰州理工大学幼儿园管理系统</a>
-        </div>
-        <div class="info col-sm-6 hidden-xs">
-          <User/>
-        </div>
-      </div>
-    </header>
-    <!-- 头部布局结束 -->
+    <Header />
+    <User />
+    <Nav />
     <div class="content">
       <router-view></router-view>
     </div>
@@ -28,18 +19,35 @@ import $ from 'jquery'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'font-awesome/css/font-awesome.css'
 import User from '../../components/manage/User'
+import Header from '../../components/index/Header'
 
 export default {
   name:'Manage',
   components: {
-    User
+    User,Header
+  },
+  created(){
+    var vm = this;
+    var usertype = sessionStorage.getItem('usertype');
+    if(usertype == '管理员'){
+      vm.$router.push({path:'/admin'});
+    }else if(usertype == '家长'){
+      vm.$router.push({path:'/student'});
+    }else if(usertype == '教师'){
+      vm.$router.push({path:'/teacher'});
+    }else if(usertype == null){
+      vm.$message({
+        type:'error',
+        message:'请登录！'
+      })
+    }
   }
 }
 </script>
 
 <style scoped="scoped" lang="scss">
 $bgColor:#eff3f4;
-$bgColor_header:#448db8;
+$bgColor_header:#005BAC;
 
 #manage {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -50,49 +58,12 @@ $bgColor_header:#448db8;
   right: 0;
   top:0;
   bottom: 0;
-  background-color: $bgColor;
+  background-image: url('../../assets/img/bg.png');
 
   ul {
     margin:0;padding:0;
     list-style:none;
   }
-  // 头部样式开始
-  .header {
-    position:absolute;
-    left:0;right:0;
-    background-color:$bgColor_header;
-    padding:0 2em;
-    color:#FFFFFF;
-    * {
-      line-height:56px;
-      height:56px;
-    }
-    .logo{
-      text-align:left;
-      font-size:1.5em;
-      a {
-        text-decoration: none;
-        color:#FFFFFF;
-      }
-    }
-    .info {
-      text-align:right;
-      .user {
-        cursor:pointer;
-        .el-dropdown-link {
-          color:#FFFFFF;
-        }
-        img{
-          height:2.5em;
-          width:2.5em;
-          border-radius:50%;
-          background-color:#FFFFFF;
-          margin:0 .5em;
-        }
-      }
-    }
-  }
-  // 头部样式结束
   // 底部样式开始
   .footer {
     position: fixed;

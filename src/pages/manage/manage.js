@@ -2,7 +2,13 @@ import Vue from 'vue'
 import Manage from './Manage.vue'
 import ElementUI from 'element-ui';
 import router from '../../router/manage.js'
+import  VueQuillEditor from 'vue-quill-editor'
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+import store from '../../components/store.js'
 
+Vue.use(VueQuillEditor);
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
@@ -30,6 +36,7 @@ router.beforeEach((to, from, next) => {
 new Vue({
   el:'#manage',
   router,
+  store,
   components:{Manage},
   template:'<Manage/>'
 })

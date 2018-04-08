@@ -65,7 +65,7 @@
                             </div>
                             <span id="vsb_content_2_2853_u6" name="vsb_content_2_2853_u6"></span>
                         </div>
-                        <div class="zb1-a"><a href="info/1184/2853.htm">查看更多>></a></div>
+                        <router-link :to="{path:'/annouce',query:{id:25}}"><div class="zb1-a"><a>查看更多>></a></div></router-link>
                     </div>
                 </div>
                 <div class="zb-ul">
@@ -74,7 +74,6 @@
                             <div class="zb-i"><img src="../../assets/img/ys2.jpg" width="222" height="126" border="0"></div>
                             <div class="zb-r">
                                 <div class="zb-h">园风建设</div>
-                                <div class="zb-a"><a href="ysjj/yfjs.htm">查看更多&gt;&gt;</a></div>
                             </div>
                         </div>
                         <div class="zb-con"></div>
@@ -84,7 +83,7 @@
                             <div class="zb-i"><img src="../../assets/img/ys3.jpg" width="222" height="126" border="0"></div>
                             <div class="zb-r">
                                 <div class="zb-h">教育理念</div>
-                                <div class="zb-a"><a href="ysjj/jyln.htm">查看更多&gt;&gt;</a></div>
+                                <router-link :to="{path:'/annouce',query:{id:26}}"><div class="zb-a"><a>查看更多&gt;&gt;</a></div></router-link>
                             </div>
                         </div>
                         <div class="zb-con">
@@ -107,7 +106,7 @@
                             <div class="zb-i"><img src="../../assets/img/ys4.jpg" width="222" height="126" border="0"></div>
                             <div class="zb-r">
                                 <div class="zb-h">师资力量</div>
-                                <div class="zb-a"><a href="ysjj/szll.htm">查看更多&gt;&gt;</a></div>
+                                <router-link :to="{path:'/annouce',query:{id:27}}"><div class="zb-a"><a>查看更多&gt;&gt;</a></div></router-link>
                             </div>
                         </div>
                         <div class="zb-con">
@@ -140,7 +139,6 @@
                             <div class="zb-i"><img src="../../assets/img/ys5.jpg" width="222" height="126" border="0"></div>
                             <div class="zb-r">
                                 <div class="zb-h">园所环境</div>
-                                <div class="zb-a"><a href="ysjj/yshj.htm">查看更多&gt;&gt;</a></div>
                             </div>
                         </div>
                         <div class="zb-con"></div>
@@ -157,7 +155,6 @@
                             </div>
                             <span id="vsb_content_2850_u15" name="vsb_content_2850_u15"></span>
                         </div>
-                        <div class="zb1-a"><a href="info/1185/2850.htm">查看更多>></a></div>
                     </div>
                     <div class="zb1-i" style="float: right">
                         <img src="../../assets/img/ys1.jpg" width="462" height="260" border="0">
@@ -169,6 +166,7 @@
 </template>
 
 <script>
+import $ from 'jquery'
 export default {
     name: 'ysjsBody'
 }

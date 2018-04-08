@@ -18,7 +18,7 @@
                         </a><!--#endeditable-->
                     </div>
                     <div class="form"><!--#begineditable viewid="194643" name="全文检索"-->
-                        <form action="zzzsearch.jsp?wbtreeid=1042" method="post" id="au2a" name="au2a" onsubmit="return _nl_ys_check()" style="display: inline">
+                        <form action="" method="post" id="au2a" name="au2a" onsubmit="return _nl_ys_check()" style="display: inline">
                             <input type="hidden" id="lucenenewssearchkeyword194643" name="lucenenewssearchkeyword" value="">
                             <input type="hidden" id="_lucenesearchtype194643" name="_lucenesearchtype" value="1">
                             <input type="hidden" id="searchScope194643" name="searchScope" value="0">
@@ -38,12 +38,8 @@
 
 <script>
 import $ from 'jquery';
-import Nav from './Nav'
 export default {
-    name: 'Header',
-    components: {
-      Nav
-    }
+    name: 'Header'
 }
 $(document).ready(function () {
     $(window).scroll(function () {

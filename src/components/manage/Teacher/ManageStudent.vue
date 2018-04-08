@@ -38,7 +38,7 @@
         label="联系电话">
       </el-table-column>
       <el-table-column
-      prop="classId"
+      prop="className"
       label="所在班级">
       </el-table-column>
       <el-table-column
@@ -85,6 +85,16 @@
         <el-form-item label="联系电话" :label-width="formLabelWidth">
           <el-input v-model="form.phonenum" auto-complete="off"></el-input>
         </el-form-item>
+        <el-form-item label="所在班级" :label-width="formLabelWidth">
+          <el-select v-model="form.classId">
+            <el-option
+              v-for="item in options"
+              :key="item.value"
+              :label="item.label"
+              :value="item.value">
+            </el-option>
+        </el-select>
+        </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取 消</el-button>
@@ -124,6 +134,16 @@
         </el-form-item>
         <el-form-item label="联系电话" :label-width="formLabelWidth">
           <el-input v-model="formSave.phonenum" auto-complete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="所在班级" :label-width="formLabelWidth">
+          <el-select v-model="form.classId">
+            <el-option
+              v-for="item in options"
+              :key="item.value"
+              :label="item.label"
+              :value="item.value">
+            </el-option>
+        </el-select>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -178,17 +198,37 @@ export default {
           return time.getTime() > Date.now();
         },
       },
+      options:[]
     }
   },
   created () {
-    var url ='http://127.0.0.1:3000/student/findAll';
-    var vm = this;
-    $.getJSON(url,function(data){
-      vm.tableData = data.rows;
-      vm.total = data.rows.length;
-    });
+    this.updated();
   },
   methods: {
+    updated(){
+      var vm = this;
+      vm.tableData.length = 0;
+      vm.options.length = 0;
+      var urlNew = 'http://127.0.0.1:3000/class/findAll';
+      $.getJSON(urlNew,function(data){
+        data.rows.forEach(function(item){
+          vm.options.push({label:item.name,value:item.id});
+        })
+      })
+      var url ='http://127.0.0.1:3000/student/findAll';
+      $.getJSON(url,function(data){
+        vm.total = data.rows.length;
+        data.rows.forEach(function(item){
+          var classId = item.classId;
+          vm.options.forEach(function(i){
+            if(i.value == item.classId){
+              item.className = i.label
+            }
+          })
+          vm.tableData.push(item);
+        })
+      })
+    },
     current_change:function(currentPage){
       this.currentPage = currentPage;
     },
@@ -211,11 +251,7 @@ export default {
             message:'操作失败'
           })
         }
-        var url ='http://127.0.0.1:3000/student/findAll';
-        $.getJSON(url,function(data){
-          vm.tableData = data.rows;
-          vm.total = data.rows.length;
-        });
+        vm.updated();
       })
     },
     handleChange(row){
@@ -238,11 +274,7 @@ export default {
             message:'操作失败'
           })
         }
-        var url ='http://127.0.0.1:3000/student/findAll';
-        $.getJSON(url,function(data){
-          vm.tableData = data.rows;
-          vm.total = data.rows.length;
-        });
+        vm.updated();
       })
     },
     handleSubmitSave(){
@@ -260,11 +292,7 @@ export default {
             message:'操作失败'
           })
         }
-        var url ='http://127.0.0.1:3000/student/findAll';
-        $.getJSON(url,function(data){
-          vm.tableData = data.rows;
-          vm.total = data.rows.length;
-        });
+        vm.updated();
       })
     }
   },

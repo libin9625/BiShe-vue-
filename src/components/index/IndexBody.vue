@@ -9,35 +9,47 @@
                     <div id="ifocus_piclist">
                         <ul>
                         <!--#begineditable viewid="194654" name="焦点新闻大图片"-->
+                          <router-link :to="{path:'/annouce',query:{id:1}}">
                             <li>
-                                <a href="info/1182/2843.htm" target="_blank" title="兰州理工大学幼儿园获评兰州市餐饮服务单位食品安全量化分级最高等级（A级三星）">
+                                <a>
                                     <img src="../../assets/img/CC518ACD2A50E7379C95D564B1C_7F63D3E5_252DA.jpg">
                                 </a>
                             </li>
+                          </router-link>
+                          <router-link :to="{path:'/annouce',query:{id:2}}">
                             <li>
-                                <a href="info/1182/2844.htm" target="_blank" title="兰州理工大学幼儿园作为卫生保健示范园面向全市开放观摩">
+                                <a>
                                     <img src="../../assets/img/99B897D9C4DF5409C0C48CC9E2E_D8AA93FD_E6BA.jpg">
                                 </a>
                             </li>
+                          </router-link>
+                          <router-link :to="{path:'/annouce',query:{id:3}}">
                             <li>
-                                <a href="info/1182/2845.htm" target="_blank" title="兰州理工大学幼儿园顺利召开“十三五”课题开题论证会">
+                                <a>
                                     <img src="../../assets/img/59CE3F4B930435EE7F0B88540FA_22633A9D_D80C.jpg">
                                 </a>
                             </li>
+                          </router-link>
                         </ul>
                     </div>
                     <div id="ifocus_opdiv"></div>
                     <div id="ifocus_tx">
                         <ul><!--#begineditable viewid="194655" name="焦点新闻标题"-->
-                            <li>
-                                <a href="info/1182/2843.htm" target="_blank" title="兰州理工大学幼儿园获评兰州市餐饮服务单位食品安全量化分级最高等级（A级三星）">兰州理工大学幼儿园获评兰州市餐饮服务单位食品安全量化分级最高等级...</a>
-                            </li>
-                            <li>
-                                <a href="info/1182/2844.htm" target="_blank" title="兰州理工大学幼儿园作为卫生保健示范园面向全市开放观摩">兰州理工大学幼儿园作为卫生保健示范园面向全市开放观摩</a>
-                            </li>
-                            <li>
-                                <a href="info/1182/2845.htm" target="_blank" title="兰州理工大学幼儿园顺利召开“十三五”课题开题论证会">兰州理工大学幼儿园顺利召开“十三五”课题开题论证会</a>
-                            </li>
+                          <li>
+                            <router-link :to="{path:'/annouce',query:{id:1}}">
+                                <a :title="notice1.header">{{notice1.header}}...</a>
+                            </router-link>
+                          </li>
+                          <li>
+                            <router-link :to="{path:'/annouce',query:{id:2}}">
+                              <a :title="notice2.header">{{notice2.header}}</a>
+                            </router-link>
+                          </li>
+                          <li>
+                              <router-link :to="{path:'/annouce',query:{id:3}}">
+                              <a :title="notice3.header">{{notice3.header}}</a>
+                              </router-link>
+                          </li>
                         </ul>
                     </div>
                 </div>
@@ -53,31 +65,37 @@
             <div class="p1-r fr">
                 <div class="part1-top">
                     <div class="part1-h">
-                        <a href="#" target="_blank">焦点新闻</a>
+                        <router-link to="/jdxw"><a>焦点新闻</a></router-link>
                     </div>
                     <div class="more">
-                        <a href="jdxw.htm" target="_blank">更多&gt;&gt;</a>
+                        <router-link to="/jdxw"><a href="">更多&gt;&gt;</a></router-link>
                     </div>
                 </div>
                 <ul>
+                  <router-link :to="{path:'/annouce',query:{id:1}}">
                     <li>
-                        <a href="info/1182/2843.htm" target="_blank" title="兰州理工大学幼儿园获评兰州市餐饮服务单位食品安全量化分级最高等级（A级三星）">
-                            <div class="li-str">兰州理工大学幼儿园获评北京市餐饮服务单位食品...</div>
+                        <a>
+                            <div class="li-str">{{notice1.header}}...</div>
                             <div class="date">03-14</div>
                         </a>
                     </li>
+                  </router-link>
+                  <router-link :to="{path:'/annouce',query:{id:2}}">
                     <li>
-                        <a href="info/1182/2844.htm" target="_blank" title="兰州后理工大学幼儿园作为卫生保健示范园面向全市开放观摩">
-                            <div class="li-str">兰州理工大学幼儿园作为卫生保健示范园面向全市...</div>
+                        <a>
+                            <div class="li-str">{{notice2.header}}...</div>
                             <div class="date">03-14</div>
                         </a>
                     </li>
+                  </router-link>
+                  <router-link :to="{path:'/annouce',query:{id:3}}">
                     <li>
-                        <a href="info/1182/2845.htm" target="_blank" title="兰州理工大学幼儿园顺利召开“十三五”课题开题论证会">
-                            <div class="li-str">兰州理工大学幼儿园顺利召开“十三五”课题开题...</div>
+                        <a>
+                            <div class="li-str">{{notice3.header}}...</div>
                             <div class="date">03-11</div>
                         </a>
                     </li>
+                  </router-link>
                 </ul>
             </div>
         </div>
@@ -149,12 +167,14 @@
             <div class="p3-Slide">
                 <div class="bd">
                     <ul>
+                      <router-link :to="{path:'/annouce',query:{id:4}}">
                         <li>
-                            <a href="info/1089/2833.htm" target="_blank" title="兰州理工大学幼儿园2018年1月食谱">
+                            <a>
                                 <img src="../../assets/img/38CA80D8290897B9781EBFA35DA_63E31AAA_9527.png">
-                                <div class="tt">兰州理工大学幼儿园2018年1月食谱</div>
+                                <div class="tt">{{notice4.header}}</div>
                             </a>
                         </li>
+                      </router-link>
                     </ul>
                 </div>
             </div>
@@ -162,39 +182,45 @@
                 <div class="news ns-top">
                     <div class="news-h fl">
                         <span>幼儿园公告</span>
-                        <a href="yeygg.htm" target="_blank">更多&gt;&gt;</a>
+                        <router-link :to="{path:'/annouce',query:{id:4}}"><a>更多&gt;&gt;</a></router-link>
                     </div>
                     <div class="news-ul fr">
                         <ul><!--#begineditable viewid="194950" name="幼儿园公告"-->
+                          <router-link :to="{path:'/annouce',query:{id:5}}">
                             <li>
-                                <a href="info/1198/2852.htm" target="_blank" title="兰州理工大学幼儿园向全国公开诚聘优秀教师">
-                                    兰州州理工大学幼儿园向全国公开诚聘优秀教师
+                                <a>
+                                    {{notice5.header}}
                                     <span class="date1">2017-03-10</span>
                                 </a>
                             </li>
+                          </router-link>
                         </ul>
                     </div>
                 </div>
                 <div class="news ns-bot">
                     <div class="news-ul fl">
                         <ul><!--#begineditable viewid="194951" name="园内新闻"-->
+                          <router-link :to="{path:'/annouce',query:{id:6}}">
                             <li>
-                                <a href="info/1089/2884.htm" target="_blank" title="致家长的一封信——2018年寒假放假告知书">
-                                    致家长的一封信——2018年寒假放假告知书
+                                <a>
+                                    {{notice6.header}}
                                     <span class="date1">2018-01-31</span>
                                 </a>
                             </li>
+                          </router-link>
+                          <router-link :to="{path:'/annouce',query:{id:5}}">
                             <li>
-                                <a href="info/1089/2833.htm" target="_blank" title="兰州理工大学幼儿园2018年1月食谱">
-                                    兰州理工大学幼儿园2018年1月食谱
+                                <a>
+                                    {{notice5.header}}
                                     <span class="date1">2018-01-02</span>
                                 </a>
                             </li>
+                          </router-link>
                         </ul>
                     </div>
                     <div class="news-h fr">
-                        <span>园内新闻</span>
-                        <a href="ynxw.htm" target="_blank">更多&gt;&gt;</a>
+                        <span>卫生保健</span>
+                        <router-link :to="{path:'/annouce',query:{id:8}}"><a>更多&gt;&gt;</a></router-link>
                     </div>
                 </div>
             </div>
@@ -206,44 +232,50 @@
             <div class="slideTxtBox">
                 <div class="hd">
                     <ul>
+                      <router-link to="">
                         <li style="border-right: #fff 1px solid">
                             <span class="hd-h"><img src="../../assets/img/b1.png">班级动态</span>
-                            <a href="bjdt.htm" target="_blank">更多&gt;&gt;</a>
+                            <a>更多&gt;&gt;</a>
                         </li>
+                      </router-link>
+                      <router-link to="">
                         <li style="border-right: #fff 1px solid;width: 332px">
                             <span class="hd-h"><img src="../../assets/img/b2.png">园所文化</span>
-                            <a href="yswh.htm" target="_blank">更多&gt;&gt;</a>
+                            <a>更多&gt;&gt;</a>
                         </li>
+                      </router-link>
+                      <router-link to="">
                         <li>
                             <span class="hd-h"><img src="../../assets/img/b3.png">早教基地</span>
-                            <a href="zjjd.htm" target="_blank">更多&gt;&gt;</a>
+                            <a>更多&gt;&gt;</a>
                         </li>
+                      </router-link>
                     </ul>
                 </div>
                 <div class="bd">
                     <ul>
-                        <li><a href="info/1077/1926.htm" target="_blank" title="感谢信">感谢信</a></li>
-                        <li style="padding-right: 25px"><a href="info/1077/1924.htm" target="_blank" title="大三班家长的感谢信">大三班家长的感谢信</a></li>
-                        <li><a href="info/1078/1925.htm" target="_blank" title="中二班《3-6岁儿童学习与发展指南》语言领域教师学习心得">中二班《3-6岁儿童学习与发展指南》语言领域...</a> </li>
-                        <li><a href="info/1080/1929.htm" target="_blank" title="婴三班《3-6岁儿童学习与发展指南》语言领域教师学习心得">婴三班《3-6岁儿童学习与发展指南》语言领域...</a></li>
-                        <li style="padding-right: 25px"><a href="info/1079/1933.htm" target="_blank" title="小六班《3-6岁儿童学习与发展指南》语言领域教师学习心得">小六班《3-6岁儿童学习与发展指南》语言领域...</a> </li>
-                        <li><a href="info/1079/1932.htm" target="_blank" title="语言领域观后感">语言领域观后感</a></li>
+                        <router-link :to="{path:'/annouce',query:{id:7}}"><li><a :title="notice7.header">{{notice7.header}}</a></li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:8}}"><li style="padding-right: 25px"><a :title="notice8.header">{{notice8.header}}...</a></li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:9}}"><li><a :title="notice9.header">{{notice9.header}}...</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:10}}"><li><a :title="notice10.header">{{notice10.header}}...</a></li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:11}}"><li style="padding-right: 25px"><a :title="notice11.header">{{notice11.header}}...</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:12}}"><li><a :title="notice12.header">{{notice12.header}}</a></li></router-link>
                     </ul>
                     <ul>
-                        <li><a href="info/1070/1623.htm" target="_blank" title="幼儿园党支部组织全体党员学习《讲话》精神">幼儿园党支部组织全体党员学习《讲话》精神</a> </li>
-                        <li style="padding-right: 25px"><a href="info/1070/1622.htm" target="_blank" title="幼儿园党支部组织党员、教师献爱心">幼儿园党支部组织党员、教师献爱心</a></li>
-                        <li><a href="info/1070/1621.htm" target="_blank" title="幼儿园如期召开预备党员转正会">幼儿园如期召开预备党员转正会</a> </li>
-                        <li><a href="info/1070/1620.htm" target="_blank" title="兰州理工大学幼儿园党支部组织党员学习社会主义核心价值观">兰州理工大学幼儿园党支部组织党员学习社会主义核心...</a> </li>
-                        <li style="padding-right: 25px"><a href="info/1070/1619.htm" target="_blank" title="幼儿园召开新学期职工代表大会">幼儿园召开新学期职工代表大会</a> </li>
-                        <li><a href="info/1070/1618.htm" target="_blank" title="启航飞天梦 播撒园丁情">启航飞天梦 播撒园丁情</a> </li>
+                        <router-link :to="{path:'/annouce',query:{id:13}}"><li><a :title="notice13.header">{{notice13.header}}</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:14}}"><li style="padding-right: 25px"><a :title="notice14.header">{{notice14.header}}</a></li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:15}}"><li><a :title="notice15.header">{{notice15.header}}</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:16}}"><li><a :title="notice16.header">{{notice16.header}}...</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:17}}"><li style="padding-right: 25px"><a :title="notice17.header">{{notice17.header}}</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:18}}"><li><a :title="notice18.header">{{notice18.header}}</a> </li></router-link>
                     </ul>
                     <ul>
-                        <li><a href="info/1060/2574.htm" target="_blank" title="求真早教开班季   快乐共享促成长">求真早教开班季   快乐共享促成长</A> </li>
-                        <li style="padding-right: 25px"><a href="info/1060/1583.htm" target="_blank" title="自卑妈妈对孩子的3大危害">自卑妈妈对孩子的3大危害</a> </li>
-                        <li><a href="info/1060/1582.htm" target="_blank" title="预防感冒应多吃哪些食物？">预防感冒应多吃哪些食物？</a> </li>
-                        <li><a href="info/1060/1581.htm" target="_blank" title="育儿技巧:适切的管教宝宝">育儿技巧:适切的管教宝宝</a> </li>
-                        <li style="padding-right: 25px"><a href="info/1060/1580.htm" target="_blank" title="小儿手足口病家庭护理6小招">小儿手足口病家庭护理6小招</a> </li>
-                        <li><a href="info/1060/1579.htm" target="_blank" title="三岁娃知道什么？玩什么？">三岁娃知道什么？玩什么？</a> </li>
+                        <router-link :to="{path:'/annouce',query:{id:19}}"><li><a :title="notice19.header">{{notice19.header}}</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:20}}"><li style="padding-right: 25px"><a :title="notice20.header">{{notice20.header}}</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:21}}"><li><a :title="notice21.header">{{notice21.header}}</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:22}}"><li><a :title="notice22.header">{{notice22.header}}</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:23}}"><li style="padding-right: 25px"><a :title="notice23.header">{{notice23.header}}</a> </li></router-link>
+                        <router-link :to="{path:'/annouce',query:{id:24}}"><li><a :title="notice24.header">{{notice24.header}}</a> </li></router-link>
                     </ul>
                 </div>
             </div>
@@ -251,14 +283,14 @@
                 <div class="clear"></div>
                 <div class="bd">
                     <ul class="piclist">
-                        <li><a href="info/1091/2267.htm" target="_blank" title="阳光体育活动"><img src="../../assets/img/462EAA0579BC035B04E3EC70569_90A0A1A3_1F1CC4.jpg"><span class="tt1">阳光体育活动</span></a> </li>
-                        <li><a href="info/1091/2783.htm" target="_blank" title="精彩瞬间"><img src="../../assets/img/6E643852D0394EF085F724DE0DB_AF617FA4_D9B6.jpg"><span class="tt1">精彩瞬间</span></a> </li>
-                        <li><a href="info/1091/2549.htm" target="_blank" title="绿园感受春天，大胆写生"><img src="../../assets/img/F48D17D73D945041E39900CB9E1_D4C9741B_27D0B.jpg"><span class="tt1">绿园感受春天，大胆写生</span></a> </li>
-                        <li><a href="info/1091/2548.htm" target="_blank" title="新媒体课"><img src="../../assets/img/E464D2CCDF0087DE4DE97064B77_9882F568_1AB6B.jpg"><span class="tt1">新媒体课</span></a> </li>
-                        <li><a href="info/1091/2547.htm" target="_blank" title="新年开放活动"><img src="../../assets/img/F9BCB50A4FA7D529C9290AF576D_14D7CFF5_1CD4A.jpg"><span class="tt1">新年开放活动</span></a> </li>
-                        <li><a href="info/1091/2546.htm" target="_blank" title="童话剧"><img src="../../assets/img/456C7FF50C988881A148F335F74_14C5CA15_18353.jpg"><span class="tt1">童话剧</span></a> </li>
-                        <li><a href="info/1091/1631.htm" target="_blank" title="科学实验走进兰州理工大学幼儿园"><img src="../../assets/img/21B8620775A51A155A99F7D07C2_21E56ECE_2F018.jpg"><span class="tt1">科学实验走进兰州理工大学幼儿园</span></a> </li>
-                        <li><a href="info/1091/1905.htm" target="_blank" title="快乐天使"><img src="../../assets/img/4ECE69BC0AC510806D71474677C_958CD6BE_3FEC5.jpg"><span class="tt1">快乐天使</span></a> </li>
+                        <li><a title="阳光体育活动"><img src="../../assets/img/462EAA0579BC035B04E3EC70569_90A0A1A3_1F1CC4.jpg"></a></li>
+                        <li><a title="精彩瞬间"><img src="../../assets/img/6E643852D0394EF085F724DE0DB_AF617FA4_D9B6.jpg"></a></li>
+                        <li><a title="绿园感受春天，大胆写生"><img src="../../assets/img/F48D17D73D945041E39900CB9E1_D4C9741B_27D0B.jpg"></a></li>
+                        <li><a title="新媒体课"><img src="../../assets/img/E464D2CCDF0087DE4DE97064B77_9882F568_1AB6B.jpg"></a></li>
+                        <li><a title="新年开放活动"><img src="../../assets/img/F9BCB50A4FA7D529C9290AF576D_14D7CFF5_1CD4A.jpg"></a></li>
+                        <li><a title="童话剧"><img src="../../assets/img/456C7FF50C988881A148F335F74_14C5CA15_18353.jpg"></a></li>
+                        <li><a title="科学实验走进兰州理工大学幼儿园"><img src="../../assets/img/21B8620775A51A155A99F7D07C2_21E56ECE_2F018.jpg"></a></li>
+                        <li><a title="快乐天使"><img src="../../assets/img/4ECE69BC0AC510806D71474677C_958CD6BE_3FEC5.jpg"></a></li>
                     </ul>
                 </div>
                 <a class="next" href="javascript:void(0)"></a>
@@ -271,7 +303,68 @@
 </template>
 
 <script>
+import $ from 'jquery'
 export default {
-  name: 'IndexBody'
+  name: 'IndexBody',
+  data () {
+    return {
+      notice:[],
+      notice1:{},
+      notice2:{},
+      notice3:{},
+      notice4:{},
+      notice5:{},
+      notice6:{},
+      notice7:{},
+      notice8:{},
+      notice9:{},
+      notice10:{},
+      notice11:{},
+      notice12:{},
+      notice13:{},
+      notice14:{},
+      notice15:{},
+      notice16:{},
+      notice17:{},
+      notice18:{},
+      notice19:{},
+      notice20:{},
+      notice21:{},
+      notice22:{},
+      notice23:{},
+      notice24:{},
+    }
+  },
+  created () {
+    var vm = this;
+    var url = 'http://localhost:3000/notice/findAll';
+    $.getJSON(url,function(data){
+      vm.notice = data.rows;
+      vm.notice1 = data.rows[0];
+      vm.notice2 = data.rows[1];
+      vm.notice3 = data.rows[2];
+      vm.notice4 = data.rows[3];
+      vm.notice5 = data.rows[4];
+      vm.notice6 = data.rows[5];
+      vm.notice7 = data.rows[6];
+      vm.notice8 = data.rows[7];
+      vm.notice9 = data.rows[8];
+      vm.notice10 = data.rows[9];
+      vm.notice11 = data.rows[10];
+      vm.notice12 = data.rows[11];
+      vm.notice13 = data.rows[12];
+      vm.notice14 = data.rows[13];
+      vm.notice15 = data.rows[14];
+      vm.notice16 = data.rows[15];
+      vm.notice17 = data.rows[16];
+      vm.notice18 = data.rows[17];
+      vm.notice19 = data.rows[18];
+      vm.notice20 = data.rows[19];
+      vm.notice21 = data.rows[20];
+      vm.notice22 = data.rows[21];
+      vm.notice23 = data.rows[22];
+      vm.notice24 = data.rows[23];
+    })
+  }
 }
 </script>

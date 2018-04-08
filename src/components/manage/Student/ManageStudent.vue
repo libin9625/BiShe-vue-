@@ -16,7 +16,7 @@
     </el-card>
     <el-card class="box-card" v-show="FormVisible">
       <div slot="header" class="clearfix">
-        <span class="header">教师个人信息修改</span>
+        <span class="header">学生个人信息修改</span>
         <el-button style="float: right; padding: 3px 0" type="text" disabled>修改个人信息</el-button>
       </div>
       <el-form :model="form">
@@ -128,6 +128,7 @@
 
   .el-button{
     margin-left: 400px;
+    margin-bottom: 0px!important;
   }
 
   .el-form-item{

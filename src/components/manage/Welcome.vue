@@ -1,8 +1,8 @@
 <template>
     <div id="welcome">
         <i class="fa fa-user-circle-o fa-3x welcome-font"></i>
-        <a class="welcome-font">李斌</a>
-        <span class="welcome-font">老师</span>
+        <a class="welcome-font">{{name}}</a>
+        <span class="welcome-font">{{usertype}}</span>
         <br>
         <span class="welcome-font">欢迎您的登录！</span>
     </div>
@@ -16,7 +16,7 @@
     font-size: 20px;
   }
   #welcome{
-    background-image: url("../../../assets/img/9c4c269898d854f7c47c4bc25e0afa02.png");
+    background-image: url("../../assets/img/9c4c269898d854f7c47c4bc25e0afa02.png");
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-position-x: right;
@@ -28,7 +28,17 @@
 
 <script>
 export default {
-   name:'Welcome'
+  name:'Welcome',
+  data () {
+    return {
+      name:'',
+      usertype:''
+    }
+  },
+  mounted () {
+    this.name = sessionStorage.getItem('username');
+    this.usertype = sessionStorage.getItem('usertype');
+  }
 }
 </script>
 

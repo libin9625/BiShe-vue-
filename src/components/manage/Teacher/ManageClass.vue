@@ -18,7 +18,7 @@
         label="班级口号">
       </el-table-column>
       <el-table-column
-        prop="teacherId"
+        prop="teacherName"
         label="班主任老师">
       </el-table-column>
       <!-- <el-table-column
@@ -46,8 +46,15 @@
         <el-form-item label="班级口号" :label-width="formLabelWidth">
           <el-input v-model="form.flag" auto-complete="off"></el-input>
         </el-form-item>
-        <el-form-item label="班主任老师" :label-width="formLabelWidth">
-          <el-input v-model="form.teacherId" auto-complete="off"></el-input>
+        <el-form-item label="班级名称" :label-width="formLabelWidth">
+          <el-select v-model="form.teacherId">
+            <el-option
+              v-for="item in options"
+              :key="item.value"
+              :label="item.label"
+              :value="item.value">
+            </el-option>
+        </el-select>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -66,8 +73,15 @@
         <el-form-item label="班级口号" :label-width="formLabelWidth">
           <el-input v-model="formSave.flag" auto-complete="off"></el-input>
         </el-form-item>
-        <el-form-item label="班主任老师" :label-width="formLabelWidth">
-          <el-input v-model="formSave.teacherId" auto-complete="off"></el-input>
+        <el-form-item label="班级名称" :label-width="formLabelWidth">
+          <el-select v-model="formSave.teacherId">
+            <el-option
+              v-for="item in options"
+              :key="item.value"
+              :label="item.label"
+              :value="item.value">
+            </el-option>
+          </el-select>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -110,22 +124,38 @@ export default {
       formSave:{},
       id:'',
       formLabelWidth: '120px',
-      pickerOptions1: {
-        disabledDate(time) {
-          return time.getTime() > Date.now();
-        },
-      },
+      options:[],
+      name:''
     }
   },
   created () {
-    var url ='http://127.0.0.1:3000/class/findAll';
-    var vm = this;
-    $.getJSON(url,function(data){
-      vm.tableData = data.rows;
-      vm.total = data.rows.length;
-    });
+    this.updated();
   },
   methods: {
+    updated(){
+      var vm = this;
+      vm.tableData.length = 0;
+      vm.options.length = 0;
+      var urlNew = 'http://127.0.0.1:3000/teacher/findAll';
+      $.getJSON(urlNew,function(data){
+        data.rows.forEach(function(item){
+          vm.options.push({label:item.name,value:item.id});
+        })
+      })
+      var url ='http://127.0.0.1:3000/class/findAll';
+      $.getJSON(url,function(data){
+        vm.total = data.rows.length;
+        data.rows.forEach(function(item){
+          var teacherId = item.teacherId;
+          vm.options.forEach(function(i){
+            if(i.value == item.teacherId){
+              item.teacherName = i.label
+            }
+          })
+          vm.tableData.push(item);
+        })
+      })
+    },
     current_change:function(currentPage){
       this.currentPage = currentPage;
     },
@@ -148,11 +178,7 @@ export default {
             message:'操作失败,班级中还有学生，无法删除'
           })
         }
-        var url ='http://127.0.0.1:3000/class/findAll';
-        $.getJSON(url,function(data){
-          vm.tableData = data.rows;
-          vm.total = data.rows.length;
-        });
+        vm.updated();
       })
     },
     handleChange(row){
@@ -175,11 +201,7 @@ export default {
             message:'操作失败'
           })
         }
-        var url ='http://127.0.0.1:3000/class/findAll';
-        $.getJSON(url,function(data){
-          vm.tableData = data.rows;
-          vm.total = data.rows.length;
-        });
+        vm.updated();
       })
     },
     handleSubmitSave(){
@@ -197,11 +219,7 @@ export default {
             message:'操作失败'
           })
         }
-        var url ='http://127.0.0.1:3000/class/findAll';
-        $.getJSON(url,function(data){
-          vm.tableData = data.rows;
-          vm.total = data.rows.length;
-        });
+        vm.updated();
       })
     }
   },

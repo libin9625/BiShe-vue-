@@ -11,7 +11,8 @@ var studentRoute = require('./routes/studentRoute');
 var teacherRoute = require('./routes/teacherRoute');
 var courseRoute = require('./routes/courseRoute');
 var classRoute = require('./routes/classRoute');
-// var testRoute = require('./routes/testRoute');
+var noticeRoute = require('./routes/noticeRoute');
+var userRoute = require('./routes/userRoute');
 
 var app = express();
 
@@ -43,8 +44,8 @@ app.use('/student', studentRoute);
 app.use('/teacher',teacherRoute);
 app.use('/course',courseRoute);
 app.use('/class',classRoute);
-// app.use('/test',testRoute);
-
+app.use('/notice',noticeRoute);
+app.use('/user',userRoute);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

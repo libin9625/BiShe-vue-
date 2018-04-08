@@ -42,94 +42,68 @@
                     </li>
                     <li>
                         <div class="nav-hh">
-                            <a href="bybj.html" title="保育保教">
+                          <router-link to="">
+                            <a title="幼儿园公告">
                                 <div class="nav-img bi4">
                                     <img src="../../assets/img/i3.png">
                                 </div>
-                                <div class="nav-h">保育保教</div>
+                                <div class="nav-h">幼儿园公告</div>
                             </a>
+                          </router-link>
                         </div>
                         <div class="nav-son">
                             <ul>
-                                <li><a href="bybj/yeyrshzxap.htm" title="幼儿一日生活作息安排">幼儿一日生活作息安排</a> </li>
-                                <li><a href="bybj/ybkcjjky.htm" title="园本课程及教科研">园本课程及教科研</a> </li>
+                                <router-link :to="{path:'/annouce',query:{id:28}}"><li><a>幼儿一日生活作息安排</a> </li></router-link>
+                                <router-link :to="{path:'/annouce',query:{id:29}}"><li><a>园本课程</a></li></router-link>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <div class="nav-hh">
+                          <router-link to="">
                             <a href="wsbj.html" title="卫生保健">
                                 <div class="nav-img bi5">
                                     <img src="../../assets/img/i4.png">
                                 </div>
                                 <div class="nav-h">卫生保健</div>
                             </a>
+                          </router-link>
                         </div>
                         <div class="nav-son">
                             <ul>
-                                <li><a href="wsbj/bjxc.htm" title="保健宣传">保健宣传</a> </li>
-                                <li><a href="wsbj/yeys.htm" title="幼儿饮食">幼儿饮食</a> </li>
+                                <router-link :to="{path:'/annouce',query:{id:19}}"><li><a>保健宣传</a></li></router-link>
+                                <router-link :to="{path:'/annouce',query:{id:4}}"><li><a>幼儿饮食</a></li></router-link>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <div class="nav-hh">
+                          <router-link to="">
                             <a href="jygy.html" title="家园共育">
                                 <div class="nav-img bi6">
                                     <img src="../../assets/img/i5.png">
                                 </div>
                                 <div class="nav-h">家园共育</div>
                             </a>
+                          </router-link>
                         </div>
                         <div class="nav-son">
                             <ul>
-                                <li><a href="jygy/gbmdh.html" title="各部门电话">各部门电话</a> </li>
-                                <li><a href="jygy/jzxx.html" title="家长学校">家长学校</a> </li>
+                                <router-link :to="{path:'/annouce',query:{id:24}}"><li><a>各部门电话</a></li></router-link>
+                                <router-link :to="{path:'/annouce',query:{id:29}}"><li><a>家长学校</a></li></router-link>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <div class="nav-hh">
+                          <router-link to="/noticeAll">
                             <a href="zjjd.html" title="早教基地">
                                 <div class="nav-img bi7">
                                     <img src="../../assets/img/i6.png">
                                 </div>
-                                <div class="nav-h">早教基地</div>
+                                <div class="nav-h">所有公告</div>
                             </a>
-                        </div>
-                        <div class="nav-son">
-                        <ul>
-                            <li><a href="zjjd/jdjs.html" title="基地介绍">基地介绍</a> </li>
-                            <li><a href="zjjd/kxye.html" title="科学育儿">科学育儿</a> </li>
-                            <li><a href="zjjd/sqhd.html" title="社区活动">社区活动</a> </li>
-                        </ul></div>
-                    </li>
-                    <li>
-                        <div class="nav-hh">
-                            <router-link to="yezs">
-                                <a href="" title="幼儿招生">
-                                    <div class="nav-img bi8">
-                                        <img src="../../assets/img/i7.png">
-                                    </div>
-                                    <div class="nav-h">幼儿招生</div>
-                                </a>
-                            </router-link>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="nav-hh">
-                            <a href="jzxz.html" title="家长须知">
-                                <div class="nav-img bi9">
-                                    <img src="../../assets/img/i8.png">
-                                </div>
-                                <div class="nav-h">家长须知</div>
-                            </a>
-                        </div>
-                        <div class="nav-son">
-                            <ul>
-                                <li><a href="jzxz/xsryjzxz1.html" title="新生入园家长须知">新生入园家长须知</a> </li>
-                                <li><a href="jzxz/jfxz.html" title="缴费须知">缴费须知</a> </li>
-                            </ul>
+                          </router-link>
                         </div>
                     </li>
                 </ul>

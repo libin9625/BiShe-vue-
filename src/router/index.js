@@ -5,6 +5,8 @@ import jdxwBody from '../components/index/jdxwBody.vue'
 import ysjsBody from '../components/index/ysjsBody.vue'
 import yezsBody from '../components/index/yezsBody.vue'
 import Login from '../components/index/login.vue'
+import Annouce from '../components/index/Annouce.vue'
+import NoticeAll from '../components/index/NoticeAll.vue'
 
 Vue.use(Router)
 
@@ -34,6 +36,16 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/annouce',
+      name: 'Annouce',
+      component: Annouce
+    },
+    {
+      path: '/noticeAll',
+      name: 'NoticeAll',
+      component: NoticeAll
     }
   ]
 })

@@ -26,7 +26,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     historyApiFallback: {
       rewrites: [
         { from: /.manage/, to: path.posix.join(config.dev.assetsPublicPath, 'src/pages/manage/manage.html') },
-        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'src/pages/index/index.html') },
+        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
       ],
     },
     hot: true,
@@ -54,17 +54,19 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      filename: 'src/pages/index/index.html',
-      template: 'src/pages/index/index.html',
+      filename: 'index.html',
+      template: 'index.html',
       chunks:['app'],
       inject: true
-    }),
+      }
+    ),
     new HtmlWebpackPlugin({
-      filename: 'src/pages/manage/manage.html',
-      template: 'src/pages/manage/manage.html',
-      chunks:['manage'],
-      inject: true
-    }),
+        filename: 'src/pages/manage/manage.html',
+        template: 'src/pages/manage/manage.html',
+        chunks:['manage'],
+        inject: true
+      }
+    ),
     // copy custom static assets
     new CopyWebpackPlugin([
       {

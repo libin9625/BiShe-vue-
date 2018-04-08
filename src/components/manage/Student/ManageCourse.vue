@@ -36,6 +36,7 @@
 <style>
 .el-button{
   margin-left: 0px!important;
+  margin-bottom: 0px!important;
 }
 </style>
 
