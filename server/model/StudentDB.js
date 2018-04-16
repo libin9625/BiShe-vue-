@@ -120,7 +120,23 @@ var Delete = function(id){
       reject(err);
     });
   })
+}
 
+//按性别查询
+var findByGender = function(gender){
+  return new Promise(function(resolve,reject){
+    Student.findAll(
+      {
+        where: {
+          gender: gender,
+        }
+      }
+    ).then(function(result){
+      resolve(result);
+    }).catch(function(err){
+      reject(err);
+    });
+  })
 }
 // Delete(5)
 module.exports = {
@@ -128,5 +144,6 @@ module.exports = {
   save:save,
   findById:findById,
   delete:Delete,
-  update:update
+  update:update,
+  findByGender:findByGender
 }

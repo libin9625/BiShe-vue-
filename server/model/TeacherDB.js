@@ -121,11 +121,29 @@ var Delete = function(id){
   })
 }
 
+//按性别查询
+var findByGender = function(gender){
+  return new Promise(function(resolve,reject){
+    Teacher.findAll(
+      {
+        where: {
+          gender: gender,
+        }
+      }
+    ).then(function(result){
+      resolve(result);
+    }).catch(function(err){
+      reject(err);
+    });
+  })
+}
+
 // Delete(5)
 module.exports = {
   findAll:findAll,
   save:save,
   findById:findById,
   delete:Delete,
-  update:update
+  update:update,
+  findByGender:findByGender
 }

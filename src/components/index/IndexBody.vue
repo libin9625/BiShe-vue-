@@ -8,27 +8,14 @@
                 <div id="ifocus_pic">
                     <div id="ifocus_piclist">
                         <ul>
-                        <!--#begineditable viewid="194654" name="焦点新闻大图片"-->
                           <router-link :to="{path:'/annouce',query:{id:1}}">
-                            <li>
-                                <a>
-                                    <img src="../../assets/img/CC518ACD2A50E7379C95D564B1C_7F63D3E5_252DA.jpg">
-                                </a>
-                            </li>
+                            <li><img src="../../assets/img/CC518ACD2A50E7379C95D564B1C_7F63D3E5_252DA.jpg"></li>
                           </router-link>
                           <router-link :to="{path:'/annouce',query:{id:2}}">
-                            <li>
-                                <a>
-                                    <img src="../../assets/img/99B897D9C4DF5409C0C48CC9E2E_D8AA93FD_E6BA.jpg">
-                                </a>
-                            </li>
+                            <li><img src="../../assets/img/99B897D9C4DF5409C0C48CC9E2E_D8AA93FD_E6BA.jpg"></li>
                           </router-link>
                           <router-link :to="{path:'/annouce',query:{id:3}}">
-                            <li>
-                                <a>
-                                    <img src="../../assets/img/59CE3F4B930435EE7F0B88540FA_22633A9D_D80C.jpg">
-                                </a>
-                            </li>
+                            <li><img src="../../assets/img/59CE3F4B930435EE7F0B88540FA_22633A9D_D80C.jpg"></li>
                           </router-link>
                         </ul>
                     </div>
@@ -36,19 +23,13 @@
                     <div id="ifocus_tx">
                         <ul><!--#begineditable viewid="194655" name="焦点新闻标题"-->
                           <li>
-                            <router-link :to="{path:'/annouce',query:{id:1}}">
-                                <a :title="notice1.header">{{notice1.header}}...</a>
-                            </router-link>
+                            <router-link :to="{path:'/annouce',query:{id:1}}">{{notice1.header}}...</router-link>
                           </li>
                           <li>
-                            <router-link :to="{path:'/annouce',query:{id:2}}">
-                              <a :title="notice2.header">{{notice2.header}}</a>
-                            </router-link>
+                            <router-link :to="{path:'/annouce',query:{id:2}}">{{notice2.header}}...</router-link>
                           </li>
                           <li>
-                              <router-link :to="{path:'/annouce',query:{id:3}}">
-                              <a :title="notice3.header">{{notice3.header}}</a>
-                              </router-link>
+                              <router-link :to="{path:'/annouce',query:{id:3}}">{{notice3.header}}...</router-link>
                           </li>
                         </ul>
                     </div>
@@ -72,30 +53,12 @@
                     </div>
                 </div>
                 <ul>
-                  <router-link :to="{path:'/annouce',query:{id:1}}">
-                    <li>
-                        <a>
-                            <div class="li-str">{{notice1.header}}...</div>
-                            <div class="date">03-14</div>
-                        </a>
-                    </li>
-                  </router-link>
-                  <router-link :to="{path:'/annouce',query:{id:2}}">
-                    <li>
-                        <a>
-                            <div class="li-str">{{notice2.header}}...</div>
-                            <div class="date">03-14</div>
-                        </a>
-                    </li>
-                  </router-link>
-                  <router-link :to="{path:'/annouce',query:{id:3}}">
-                    <li>
-                        <a>
-                            <div class="li-str">{{notice3.header}}...</div>
-                            <div class="date">03-11</div>
-                        </a>
-                    </li>
-                  </router-link>
+                  <li v-for="(item,id) in Jdxwdata.slice(0,8)" :key="id">
+                      <router-link :to="{path:'/annouce',query:{id:item.id}}">
+                        <div class="li-str">{{item.header}}...</div>
+                        <div class="date">{{item.createdAt.slice(5,10)}}</div>
+                      </router-link>
+                  </li>
                 </ul>
             </div>
         </div>
@@ -113,7 +76,7 @@
                         <div class="sm-r">（一）基本概况幼儿园创建于1954年，距今已有60余年历史。2010大学投入3000万重新翻建园所，硬件环境得到有效改善。现占地面积10986平方米，建筑面积7000余平方米，绿化...</div>
                     </div>
                     <div class="tit-h tb1" style="font-size: 14px">
-                        <a href="info/1184/2853.htm" target="_blank" title="园所介绍">
+                        <a>
                             <img src="../../assets/img/t1.png">
                             <span>基本情况</span>
                         </a>
@@ -127,7 +90,7 @@
                         <div class="sm-r">◾全园共有106名教工。◾教师92%为大专以上学历◾有市区级优秀及骨干教师7名◾100%保育员通过等级考试◾三位园长均为本科以上学历，并具有园长...</div>
                     </div>
                     <div class="tit-h tb1" style="font-size: 14px">
-                        <a href="info/1188/2851.htm" target="_blank" title="师资队伍">
+                        <a>
                             <img src="../../assets/img/t2.png">
                             <span>师资力量</span>
                         </a>
@@ -141,7 +104,7 @@
                         <div class="sm-r">教育理念“慢教育、细照料，静待孩子成为最好的自己”慢教育：“让孩子赢在起跑线上”似乎像一道紧箍咒，让家长对孩子的未来充满担心。种子发芽需要等待，孩子的成长，...</div>
                     </div>
                     <div class="tit-h tb1" style="font-size: 14px">
-                        <a href="info/1187/2863.htm" target="_blank" title="教育理念">
+                        <a>
                             <img src="../../assets/img/t5.png">
                             <span>教育理念</span>
                         </a>
@@ -155,7 +118,7 @@
                         <div class="sm-r"></div>
                     </div>
                     <div class="tit-h tb1" style="font-size: 14px">
-                        <a href="info/1185/2850.htm" target="_blank" title="组织结构图">
+                        <a>
                             <img src="../../assets/img/t6.png">
                             <span>机构设置</span>
                         </a>
@@ -182,45 +145,31 @@
                 <div class="news ns-top">
                     <div class="news-h fl">
                         <span>幼儿园公告</span>
-                        <router-link :to="{path:'/annouce',query:{id:4}}"><a>更多&gt;&gt;</a></router-link>
                     </div>
                     <div class="news-ul fr">
                         <ul><!--#begineditable viewid="194950" name="幼儿园公告"-->
-                          <router-link :to="{path:'/annouce',query:{id:5}}">
-                            <li>
-                                <a>
-                                    {{notice5.header}}
-                                    <span class="date1">2017-03-10</span>
-                                </a>
+                            <li v-for="(item,id) in Yeyggdata.slice(0,2)" :key="id">
+                              <router-link :to="{path:'/annouce',query:{id:item.id}}">
+                                    {{item.header}}
+                                    <span class="date1">{{item.createdAt.slice(0,9)}}</span>
+                              </router-link>
                             </li>
-                          </router-link>
                         </ul>
                     </div>
                 </div>
                 <div class="news ns-bot">
                     <div class="news-ul fl">
-                        <ul><!--#begineditable viewid="194951" name="园内新闻"-->
-                          <router-link :to="{path:'/annouce',query:{id:6}}">
-                            <li>
-                                <a>
-                                    {{notice6.header}}
-                                    <span class="date1">2018-01-31</span>
-                                </a>
-                            </li>
-                          </router-link>
-                          <router-link :to="{path:'/annouce',query:{id:5}}">
-                            <li>
-                                <a>
-                                    {{notice5.header}}
-                                    <span class="date1">2018-01-02</span>
-                                </a>
-                            </li>
-                          </router-link>
+                        <ul>
+                          <li v-for="(item,id) in Wsbjdata" :key="id">
+                            <router-link :to="{path:'/annouce',query:{id:item.id}}">
+                                  {{item.header}}
+                                  <span class="date1">{{item.createdAt.slice(0,9)}}</span>
+                            </router-link>
+                          </li>
                         </ul>
                     </div>
                     <div class="news-h fr">
                         <span>卫生保健</span>
-                        <router-link :to="{path:'/annouce',query:{id:8}}"><a>更多&gt;&gt;</a></router-link>
                     </div>
                 </div>
             </div>
@@ -235,47 +184,29 @@
                       <router-link to="">
                         <li style="border-right: #fff 1px solid">
                             <span class="hd-h"><img src="../../assets/img/b1.png">班级动态</span>
-                            <a>更多&gt;&gt;</a>
                         </li>
                       </router-link>
                       <router-link to="">
                         <li style="border-right: #fff 1px solid;width: 332px">
                             <span class="hd-h"><img src="../../assets/img/b2.png">园所文化</span>
-                            <a>更多&gt;&gt;</a>
                         </li>
                       </router-link>
                       <router-link to="">
                         <li>
                             <span class="hd-h"><img src="../../assets/img/b3.png">早教基地</span>
-                            <a>更多&gt;&gt;</a>
                         </li>
                       </router-link>
                     </ul>
                 </div>
                 <div class="bd">
                     <ul>
-                        <router-link :to="{path:'/annouce',query:{id:7}}"><li><a :title="notice7.header">{{notice7.header}}</a></li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:8}}"><li style="padding-right: 25px"><a :title="notice8.header">{{notice8.header}}...</a></li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:9}}"><li><a :title="notice9.header">{{notice9.header}}...</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:10}}"><li><a :title="notice10.header">{{notice10.header}}...</a></li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:11}}"><li style="padding-right: 25px"><a :title="notice11.header">{{notice11.header}}...</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:12}}"><li><a :title="notice12.header">{{notice12.header}}</a></li></router-link>
+                        <li v-for="(item,id) in Bjdtdata.slice(0,6)" :key="id"><router-link :to="{path:'/annouce',query:{id:item.id}}">{{item.header}}</router-link></li>
                     </ul>
                     <ul>
-                        <router-link :to="{path:'/annouce',query:{id:13}}"><li><a :title="notice13.header">{{notice13.header}}</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:14}}"><li style="padding-right: 25px"><a :title="notice14.header">{{notice14.header}}</a></li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:15}}"><li><a :title="notice15.header">{{notice15.header}}</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:16}}"><li><a :title="notice16.header">{{notice16.header}}...</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:17}}"><li style="padding-right: 25px"><a :title="notice17.header">{{notice17.header}}</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:18}}"><li><a :title="notice18.header">{{notice18.header}}</a> </li></router-link>
+                        <li v-for="(item,id) in Yswhdata.slice(0,6)" :key="id"><router-link :to="{path:'/annouce',query:{id:item.id}}">{{item.header}}</router-link></li>
                     </ul>
                     <ul>
-                        <router-link :to="{path:'/annouce',query:{id:19}}"><li><a :title="notice19.header">{{notice19.header}}</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:20}}"><li style="padding-right: 25px"><a :title="notice20.header">{{notice20.header}}</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:21}}"><li><a :title="notice21.header">{{notice21.header}}</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:22}}"><li><a :title="notice22.header">{{notice22.header}}</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:23}}"><li style="padding-right: 25px"><a :title="notice23.header">{{notice23.header}}</a> </li></router-link>
-                        <router-link :to="{path:'/annouce',query:{id:24}}"><li><a :title="notice24.header">{{notice24.header}}</a> </li></router-link>
+                       <li v-for="(item,id) in Zjjddata.slice(0,6)" :key="id"><router-link :to="{path:'/annouce',query:{id:item.id}}">{{item.header}}</router-link></li>
                     </ul>
                 </div>
             </div>
@@ -308,31 +239,18 @@ export default {
   name: 'IndexBody',
   data () {
     return {
+      data:[],
+      Jdxwdata:[],
+      Bjdtdata:[],
+      Yswhdata:[],
+      Zjjddata:[],
+      Yeyggdata:[],
+      Wsbjdata:[],
       notice:[],
       notice1:{},
       notice2:{},
       notice3:{},
-      notice4:{},
-      notice5:{},
-      notice6:{},
-      notice7:{},
-      notice8:{},
-      notice9:{},
-      notice10:{},
-      notice11:{},
-      notice12:{},
-      notice13:{},
-      notice14:{},
-      notice15:{},
-      notice16:{},
-      notice17:{},
-      notice18:{},
-      notice19:{},
-      notice20:{},
-      notice21:{},
-      notice22:{},
-      notice23:{},
-      notice24:{},
+      notice4:{}
     }
   },
   created () {
@@ -344,26 +262,26 @@ export default {
       vm.notice2 = data.rows[1];
       vm.notice3 = data.rows[2];
       vm.notice4 = data.rows[3];
-      vm.notice5 = data.rows[4];
-      vm.notice6 = data.rows[5];
-      vm.notice7 = data.rows[6];
-      vm.notice8 = data.rows[7];
-      vm.notice9 = data.rows[8];
-      vm.notice10 = data.rows[9];
-      vm.notice11 = data.rows[10];
-      vm.notice12 = data.rows[11];
-      vm.notice13 = data.rows[12];
-      vm.notice14 = data.rows[13];
-      vm.notice15 = data.rows[14];
-      vm.notice16 = data.rows[15];
-      vm.notice17 = data.rows[16];
-      vm.notice18 = data.rows[17];
-      vm.notice19 = data.rows[18];
-      vm.notice20 = data.rows[19];
-      vm.notice21 = data.rows[20];
-      vm.notice22 = data.rows[21];
-      vm.notice23 = data.rows[22];
-      vm.notice24 = data.rows[23];
+    });
+    var urlNew = "http://localhost:3000/notice/findByType";
+    $.getJSON(urlNew,{selectType:'焦点新闻'},function(data){
+      vm.Jdxwdata = data.reverse();
+      vm.data = data;
+    });
+    $.getJSON(urlNew,{selectType:'班级动态'},function(data){
+      vm.Bjdtdata = data.reverse();
+    });
+    $.getJSON(urlNew,{selectType:'园所文化'},function(data){
+      vm.Yswhdata = data.reverse();
+    });
+    $.getJSON(urlNew,{selectType:'早教基地'},function(data){
+      vm.Zjjddata = data.reverse();
+    });
+    $.getJSON(urlNew,{selectType:'幼儿园公告'},function(data){
+      vm.Yeyggdata = data.reverse();
+    });
+    $.getJSON(urlNew,{selectType:'卫生保健'},function(data){
+      vm.Wsbjdata = data.reverse();
     })
   }
 }

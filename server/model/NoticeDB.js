@@ -115,10 +115,26 @@ var Delete = function(id){
 }
 // Delete(5)
 
+//根据公告分类查询
+var findByType = function(selectType){
+  return new Promise(function(resolve,reject){
+    Notice.findAll({
+      where: {
+        type: selectType,
+      }
+    }).then(function(result){
+      resolve(result);
+    }).catch(function(err){
+      reject(err);
+    })
+  })
+}
+
 module.exports = {
   findAll:findAll,
   save:save,
   findById:findById,
   delete:Delete,
-  update:update
+  update:update,
+  findByType:findByType
 }

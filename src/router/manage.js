@@ -17,6 +17,7 @@ import TNotice from '../components/manage/Teacher/ManageNotice.vue'
 import TNoticeAdd from '../components/manage/Teacher/NoticeAdd.vue'
 import ANotice from '../components/manage/Admin/ManageNotice.vue'
 import ANoticeAdd from '../components/manage/Admin/NoticeAdd.vue'
+import ADataStatistics from '../components/manage/Admin/DataStatistics.vue'
 
 Vue.use(Router)
 
@@ -89,6 +90,10 @@ export default new Router({
         {
           path:'/admin/notice',
           component:ANotice
+        },,
+        {
+          path:'/admin/data',
+          component:ADataStatistics
         },
         {
           path:'/admin/noticeAdd',

@@ -7,6 +7,9 @@ import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
 import store from '../../components/store.js'
+import echarts from 'echarts'
+
+Vue.prototype.$echarts = echarts
 
 Vue.use(VueQuillEditor);
 Vue.use(ElementUI);

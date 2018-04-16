@@ -50,4 +50,13 @@ route.post('/save',(req,resp)=>{
   })
 })
 
+//按性别查找
+route.get('/findByGender',(req,resp)=>{
+  TeacherDB.findByGender(req.query.gender).then(function(result){
+    resp.send(result);
+  }).catch(function(err){
+    resp.send(err);
+  })
+})
+
 module.exports = route;

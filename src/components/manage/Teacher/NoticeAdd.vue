@@ -58,7 +58,7 @@ export default {
   data () {
     return {
       form:{
-        content: '<h2>I am Example</h2>',
+        content: '<h2>实例内容...</h2>',
         createdAt:'',
       },
       YuLan:false,
@@ -71,32 +71,26 @@ export default {
           label:'卫生保健',
           value:'卫生保健'
         },{
-          label:'社区活动',
-          value:'社区活动'
+          label:'规章制度',
+          value:'规章制度'
         },{
           label:'园所介绍',
           value:'园所介绍'
         },{
-          label:'每日餐饮',
-          value:'每日餐饮'
-        },{
           label:'规章制度',
           value:'规章制度'
-        },{
-          label:'缴费通知',
-          value:'缴费通知'
         },{
           label:'幼儿园公告',
           value:'幼儿园公告'
         },{
-          label:'家园共育',
-          value:'家园共育'
-        },{
           label:'早教基地',
           value:'早教基地'
         },{
-          label:'其他',
-          value:'其他'
+          label:'班级动态',
+          value:'班级动态'
+        },{
+          label:'园所文化',
+          value:'园所文化'
         }
       ],
       editorOption: {

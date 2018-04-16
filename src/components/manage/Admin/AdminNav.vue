@@ -33,6 +33,12 @@
             <span>公告管理</span>
           </li>
         </router-link>
+        <router-link to="/admin/data">
+          <li>
+            <img src="../../../assets/img/11 (6).png" alt="">
+            <span>数据分析</span>
+          </li>
+        </router-link>
       </ul>
     </div>
 
@@ -62,6 +68,11 @@
         <router-link to="/admin/notice">
           <li>
             <img src="../../../assets/img/11 (5).png" alt="">
+          </li>
+        </router-link>
+        <router-link to="/admin/data">
+          <li>
+            <img src="../../../assets/img/11 (6).png" alt="">
           </li>
         </router-link>
       </ul>

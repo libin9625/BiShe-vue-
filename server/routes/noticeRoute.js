@@ -47,4 +47,13 @@ route.post('/save',(req,resp)=>{
   })
 })
 
+//通过类别查询
+route.get('/findByType',(req,resp)=>{
+  NoticeDB.findByType(req.query.selectType).then(function(result){
+    resp.send(result);
+  }).catch(function(err){
+    resp.send(err);
+  })
+})
+
 module.exports = route;
