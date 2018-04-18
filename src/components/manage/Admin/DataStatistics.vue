@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div id="studentByGender" style="width:550px;height:400px;float:left"></div>
-    <div id="teacherByGender" style="width:550px;height:400px;float:right"></div>
+    <div id="studentByGender" style="width:48%;height:400px;float:left"></div>
+    <div id="teacherByGender" style="width:48%;height:400px;float:right"></div>
     <div id="noticeByType" style="width:100%;height:350px"></div>
   </div>
 </template>

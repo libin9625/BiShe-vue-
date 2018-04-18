@@ -10,10 +10,10 @@
 
 <style>
   #welcome .welcome-font{
-    position: relative;
-    top: 20rem;
-    left: 48rem;
-    font-size: 20px;
+      position: relative;
+      top: 20rem;
+      left: 48rem;
+      font-size: 20px;
   }
   #welcome{
     background-image: url("../../assets/img/9c4c269898d854f7c47c4bc25e0afa02.png");
