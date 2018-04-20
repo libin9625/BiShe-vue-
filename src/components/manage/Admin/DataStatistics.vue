@@ -52,7 +52,7 @@ export default {
               {
                   name:'幼儿人数',
                   type:'pie',
-                  radius : [20, 110],
+                  radius : [20, 110], 
                   center : ['50%', 200],
                   roseType : 'radius',
                   width: '40%',       // for funnel
